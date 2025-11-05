@@ -1,8 +1,23 @@
 title: Teaching Repository
-theme: just-the-docs
+# Use chirpy as a remote theme
+remote_theme: "cotes2020/jekyll-theme-chirpy"
+# keep base url + site url for project site
 url: "https://robertrakay.github.io"
 baseurl: "/vyucba"
+
+# theme-specific options (tweak later as needed)
 search_enabled: true
 color_scheme: light
+
+# enable the remote-theme plugin (GitHub Pages supports jekyll-remote-theme)
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# auxiliary links shown in the theme navigation/footer
 aux_links:
   "GitHub": "https://github.com/robertrakay/vyucba"
+
+# You can add other chirpy-specific config keys later (author, social, navigation, etc.)
