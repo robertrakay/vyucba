@@ -1,8 +1,16 @@
 ---
-layout: default
-title: Vyucba - Home
-show_sidebar: true
+layout: default        # používa layout zo zložky _layouts/default.html
+title: Vyucba - Home   # zobrazí sa v záhlaví webu
+show_sidebar: true     # ak máš v layout podporu pre bočný panel
 ---
+
+{% comment %}
+🧱 HLAVNÝ OBSAH STRÁNKY
+Tento súbor je zobrazený na https://robertrakay.github.io/vyucba/
+a slúži ako úvodná stránka pre všetky predmety.
+{% endcomment %}
+
+<!-- 🧭 Navigačný panel vľavo -->
 <div id="side-panel" style="float:left;width:220px;height:100vh;background:#f1f1f1;padding:10px;box-sizing:border-box;position:fixed;">
   <h3>Subjects</h3>
   <ul style="list-style:none;padding:0;">
@@ -17,6 +25,7 @@ show_sidebar: true
   </ul>
 </div>
 
+<!-- 🧩 HLAVNÁ ČASŤ STRÁNKY -->
 <div style="margin-left:240px;padding:20px;">
 
 # 🎓 Vyucba – Teaching Repository
@@ -39,22 +48,28 @@ Každý predmet má rovnakú štruktúru:
 
 ## 🧩 Šablóna predmetu / Subject Template
 
-Ak vytváraš nový predmet, použi túto šablónu:
+Ak vytváraš nový predmet, použi túto šablónu:  
 👉 [Subject Template]({{ '/Template/' | relative_url }})
 
-
 Táto šablóna obsahuje:
-- názov predmetu
-- prehľad (overview)
-- 13-týždňovú tabuľku
+- názov predmetu  
+- prehľad (overview)  
+- 13-týždňovú tabuľku  
 - doplnky (code examples, links, assignments, simulator)
 
 ---
 
 ## 🪶 Markdown návod / Markdown Tutorial
 
-Ak chceš pridávať poznámky, úlohy alebo kódy v Markdown formáte, pozri:
-{{ include MARKDOWN_TUTORIAL.md  | markdownify }} 
+{% comment %}
+Tu je dôležitá zmena:
+„{{ include MARKDOWN_TUTORIAL.md | markdownify }}“ nefunguje,
+pretože include musí byť vo forme Liquid tagu:
+{% endcomment %}
+
+{% raw %}{% include MARKDOWN_TUTORIAL.md %}{% endraw %}
+
+👉 Tento súbor nájdeš v `_includes/MARKDOWN_TUTORIAL.md`.
 
 ---
 
