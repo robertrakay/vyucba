@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/vyucba/assets/style.css">
+</head>
+<body>
+  {% include sidebar.html %}
+  <div style="margin-left:220px;padding: 10px;">
+    <h1>{{ page.title }}</h1>
+    {{ content }}
+  </div>
+</body>
+</html>
