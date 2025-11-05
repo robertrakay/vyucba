@@ -3,8 +3,6 @@ layout: subject
 title: Automation and Automation Technology
 ---
 
-{% include sidebar.html %}
-
 <div style="margin-left:220px;padding:10px;">
   <h2>Automation and Automation Technology</h2>
   <p>Description/content for this subject...</p>
@@ -45,3 +43,4 @@ Brief description of Automation and automation technology.
 - [Assignments](./assignments/)
 - [Code Examples](./code_examples/)
 - [Instructions](./instructions/)
+
