@@ -40,7 +40,7 @@ Každý predmet má rovnakú štruktúru:
 ## 🧩 Šablóna predmetu / Subject Template
 
 Ak vytváraš nový predmet, použi túto šablónu:
-👉 [Subject Template]({{ '/TEMPLATE_subject_index.md' | relative_url }})
+👉 [Subject Template]({{ '/Template/index.md' | relative_url }})
 
 Táto šablóna obsahuje:
 - názov predmetu
