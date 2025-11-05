@@ -1,5 +1,5 @@
 ---
-layout: subject
+layout: default
 title: Vyucba - Home
 ---
 
