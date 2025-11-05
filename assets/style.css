@@ -1,0 +1,83 @@
+/* === Základný vzhľad stránky === */
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #fafafa;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* === Sidebar === */
+#side-panel {
+  background-color: #f1f1f1;
+  border-right: 1px solid #ddd;
+}
+
+#side-panel h3 {
+  text-align: center;
+  font-size: 1.1em;
+  color: #333;
+}
+
+#side-panel ul {
+  padding: 0;
+  list-style: none;
+}
+
+#side-panel a {
+  display: block;
+  padding: 8px 10px;
+  color: #0366d6;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+#side-panel a:hover {
+  background-color: #e6e6e6;
+}
+
+/* === Obsah stránky === */
+#main {
+  margin-left: 240px;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #222;
+}
+
+a {
+  color: #007acc;
+}
+
+a:hover {
+  color: #005799;
+}
+
+/* === Tabuľky === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f5f5f5;
+}
+
+/* === Kódové bloky === */
+pre, code {
+  background-color: #f4f4f4;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-family: "Consolas", monospace;
+  font-size: 0.95em;
+}
