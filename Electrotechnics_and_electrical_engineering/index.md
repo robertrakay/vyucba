@@ -1,8 +1,9 @@
 ---
 title: Electrotechnics and electrical engineering
-layout: default
+layout: subject
 has_children: true
 nav_order: 2
+show_sidebar: false
 ---
 
 # Electrotechnics and electrical engineering
@@ -15,3 +16,4 @@ Brief description of Electrotechnics and electrical engineering.
 - [Assignments](./assignments/)
 - [Code Examples](./code_examples/)
 - [Instructions](./instructions/)
+
