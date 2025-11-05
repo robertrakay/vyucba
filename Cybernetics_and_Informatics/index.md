@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Cybernetics and Informatics
+show_sidebar: false
 ---
 
 <div id="side-panel" style="float:left;width:200px;height:100vh;background:#f1f1f1;padding:10px;box-sizing:border-box;position:fixed;">
@@ -58,3 +59,4 @@ Brief description of Cybernetics and Informatics.
 - [Assignments](./assignments/)
 - [Code Examples](./code_examples/)
 - [Instructions](./instructions/)
+
