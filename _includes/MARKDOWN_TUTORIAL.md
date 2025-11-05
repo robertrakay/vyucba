@@ -1,36 +1,66 @@
-# 📘 Krátky tutoriál na Markdown
+# 🧠 Markdown Tutorial – Základy formátovania
 
-Markdown je jednoduchý jazyk na formátovanie textu.
+Tento krátky prehľad ukazuje, ako písať a formátovať text pomocou **Markdown** syntaxe.  
+Markdown je jednoduchý značkovací jazyk, ktorý sa automaticky prevádza na HTML.  
 
-## Nadpisy
+---
+
+## ✍️ Nadpisy
+Používaj znak `#` pre nadpisy rôznych úrovní:
+
 ```markdown
+# Hlavný nadpis (H1)
+## Podnadpis (H2)
+### Menší nadpis (H3)
+#### Najmenší nadpis (H4)
 
-# Hlavný nadpis
-## Podnadpis
-### Menší nadpis
+##💬 Textové formátovanie
+*Kurzíva* alebo _kurzíva_  
+**Tučné písmo** alebo __tučné písmo__  
+***Tučné a kurzíva***  
+~~Preškrtnuté~~
+##🔗 Odkazy a 📸 Obrázky
+[Text odkazu](https://example.com)
 
-**tučné písmo**
-*kurzíva*
-~~prečiarknuté~~
+![Alternatívny text obrázka](https://via.placeholder.com/150)
+##📋 Zoznamy
+Nečíslovaný zoznam:
+- Prvá položka
+- Druhá položka
+  - Vnorená položka
+  - Ďalšia vnorená položka
+##Číslovaný zoznam:
+1. Prvá vec
+2. Druhá vec
+3. Tretia vec
+##📊 Tabuľky
+| Týždeň | Náplň | Detaily |
+|--------|--------|----------|
+| 1 | Úvod do predmetu | Prezentácia |
+| 2 | Základy programovania | Cvičenia |
+##💻 Kód
+Inline kód:
 
-Zoznamy
-- Položka 1
-- Položka 2
-  - Podpoložka
+Použi spätné apostrofy:
+Toto je `inline` kód.
 
-Odkazy a obrázky
-[Odkaz na stránku](https://example.com)
-![Popis obrázka](https://example.com/image.png)
+## Blok kódu:
 
-Kódové bloky
-
+Použi trojité apostrofy:
 ```python
-print("Hello, world!")
-```
+print("Hello, World!")
 
-```
+## ➕ Citácie
+> Toto je citát alebo zvýraznený text.
+> Môže mať viac riadkov.
+
+##✅ Check-list
+- [x] Hotová úloha
+- [ ] Nehotová úloha
 
 
-## 📚 ŠTRUKTÚRA KAŽDÉHO PREDMETU
+📘 Viac o Markdown
 
-Každý priečinok (predmet) má identickú vnútornú štruktúru:
+Oficiálna dokumentácia GitHub Markdown
+Markdown Cheat Sheet
+
