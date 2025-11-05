@@ -1,3 +1,9 @@
-# Markdown Tutorial
+# 📘 Krátky tutoriál na Markdown
 
-This document serves as a tutorial for writing in Markdown.
+Markdown je jednoduchý jazyk na formátovanie textu.
+
+## Nadpisy
+```markdown
+# Hlavný nadpis
+## Podnadpis
+### Menší nadpis
