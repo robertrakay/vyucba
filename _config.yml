@@ -4,6 +4,8 @@ remote_theme: "cotes2020/jekyll-theme-chirpy"
 url: "https://robertrakay.github.io"
 baseurl: "/vyucba"
 
+markdown: kramdown
+
 search_enabled: true
 color_scheme: light
 
