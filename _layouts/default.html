@@ -7,12 +7,17 @@
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
 
-<body>
+<body style="margin:0; font-family: sans-serif;">
 
   {% if page.show_sidebar %}
-  <aside id="side-panel">
+  <!-- 🧭 Bočný panel -->
+  <div id="side-panel" 
+       style="position: fixed; top:0; left:0; bottom:0;
+              width:220px; background:#f1f1f1;
+              padding:10px; box-sizing:border-box;
+              border-right:1px solid #ccc; overflow-y:auto;">
     <h3>Subjects</h3>
-    <ul>
+    <ul style="list-style:none; padding:0; margin:0;">
       <li><a href="{{ '/' | relative_url }}">🏠 Home</a></li>
       <li><a href="{{ '/Automation_and_automation_technology/' | relative_url }}">Automation & Automation Technology</a></li>
       <li><a href="{{ '/Cybernetics_and_Informatics/' | relative_url }}">Cybernetics & Informatics</a></li>
@@ -22,12 +27,13 @@
       <li><a href="{{ '/Mechatronics_-_Microprocessors/' | relative_url }}">Mechatronics - Microprocessors</a></li>
       <li><a href="{{ '/Základy_programovania_-_Programming_Technics/' | relative_url }}">Základy programovania</a></li>
     </ul>
-  </aside>
+  </div>
   {% endif %}
 
-  <main class="{% if page.show_sidebar %}with-sidebar{% endif %}">
+  <!-- 🧱 Hlavný obsah -->
+  <div style="margin-left:{% if page.show_sidebar %}240px{% else %}0{% endif %}; padding:20px; min-height:100vh;">
     {{ content }}
-  </main>
+  </div>
 
 </body>
 </html>
