@@ -18,7 +18,7 @@ title: Cybernetics and Informatics
 </div>
 
 <div style="margin-left:220px;padding:10px;">
-  <h2>Automation and Automation Technology</h2>
+  <h2>Cybernetics and Informatics</h2>
   <p>Description/content for this subject...</p>
   <h3>Semester Plan</h3>
   <table border="1" style="border-collapse:collapse;width:100%;text-align:left;">
