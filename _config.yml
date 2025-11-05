@@ -1,3 +1,17 @@
-title: Vyucba Teaching Repository
+title: Teaching Repository
+remote_theme: "cotes2020/jekyll-theme-chirpy"
 
-markdown: kramdown
+url: "https://robertrakay.github.io"
+baseurl: "/vyucba"
+
+search_enabled: true
+color_scheme: light
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+aux_links:
+  "GitHub": "https://github.com/robertrakay/vyucba"
