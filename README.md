@@ -2,4 +2,3 @@
 
 This is the main repository for multiple subjects.
 
-{% include MARKDOWN_TUTORIAL.md %}
