@@ -10,20 +10,6 @@ Tento súbor je zobrazený na https://robertrakay.github.io/vyucba/
 a slúži ako úvodná stránka pre všetky predmety.
 {% endcomment %}
 
-<!-- 🧭 Navigačný panel vľavo -->
-<div id="side-panel" style="float:left;width:220px;height:100vh;background:#f1f1f1;padding:10px;box-sizing:border-box;position:fixed;">
-  <h3>Subjects</h3>
-  <ul style="list-style:none;padding:0;">
-    <li><a href="{{ '/' | relative_url }}">🏠 Home</a></li>
-    <li><a href="{{ '/Automation_and_automation_technology/' | relative_url }}">Automation & Automation Technology</a></li>
-    <li><a href="{{ '/Cybernetics_and_Informatics/' | relative_url }}">Cybernetics & Informatics</a></li>
-    <li><a href="{{ '/Electrotechnics_and_electrical_engineering/' | relative_url }}">Electrotechnics & Electrical Engineering</a></li>
-    <li><a href="{{ '/Lekárska_elektronika/' | relative_url }}">Lekárska elektronika</a></li>
-    <li><a href="{{ '/Logické_riadiace_systémy/' | relative_url }}">Logické riadiace systémy</a></li>
-    <li><a href="{{ '/Mechatronics_-_Microprocessors/' | relative_url }}">Mechatronics - Microprocessors</a></li>
-    <li><a href="{{ '/Základy_programovania_-_Programming_Technics/' | relative_url }}">Základy programovania</a></li>
-  </ul>
-</div>
 
 <!-- 🧩 HLAVNÁ ČASŤ STRÁNKY -->
 <div style="margin-left:240px;padding:20px;">
