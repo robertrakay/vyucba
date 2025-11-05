@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: subject
 title: Automation and Automation Technology
 ---
 
