@@ -8,11 +8,11 @@
 </head>
 
 <body>
-  <!-- Sidebar sa zobrazí len ak je nastavený show_sidebar: true -->
+
   {% if page.show_sidebar %}
-  <div id="side-panel" style="float:left;width:220px;height:100vh;background:#f1f1f1;padding:10px;box-sizing:border-box;position:fixed;">
+  <aside id="side-panel">
     <h3>Subjects</h3>
-    <ul style="list-style:none;padding:0;">
+    <ul>
       <li><a href="{{ '/' | relative_url }}">🏠 Home</a></li>
       <li><a href="{{ '/Automation_and_automation_technology/' | relative_url }}">Automation & Automation Technology</a></li>
       <li><a href="{{ '/Cybernetics_and_Informatics/' | relative_url }}">Cybernetics & Informatics</a></li>
@@ -22,11 +22,12 @@
       <li><a href="{{ '/Mechatronics_-_Microprocessors/' | relative_url }}">Mechatronics - Microprocessors</a></li>
       <li><a href="{{ '/Základy_programovania_-_Programming_Technics/' | relative_url }}">Základy programovania</a></li>
     </ul>
-  </div>
+  </aside>
   {% endif %}
 
-  <div style="margin-left: {% if page.show_sidebar %}240px{% else %}0{% endif %}; padding:20px;">
+  <main class="{% if page.show_sidebar %}with-sidebar{% endif %}">
     {{ content }}
-  </div>
+  </main>
+
 </body>
 </html>

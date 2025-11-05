@@ -1,32 +1,14 @@
 ---
-layout: default        # používa layout zo zložky _layouts/default.html
-title: Vyucba - Home   # zobrazí sa v záhlaví webu
-show_sidebar: true     # ak máš v layout podporu pre bočný panel
+layout: default
+title: Vyucba - Home
+show_sidebar: true
 ---
 
 {% comment %}
-🧱 HLAVNÝ OBSAH STRÁNKY
-Tento súbor je zobrazený na https://robertrakay.github.io/vyucba/
-a slúži ako úvodná stránka pre všetky predmety.
+🧱 HLAVNÁ STRÁNKA
+Zobrazí sa na https://robertrakay.github.io/vyucba/
+Používa layout _layouts/default.html (ktorý vkladá sidebar automaticky)
 {% endcomment %}
-
-<!-- 🧭 Navigačný panel vľavo -->
-<div id="side-panel" style="float:left;width:220px;height:100vh;background:#f1f1f1;padding:10px;box-sizing:border-box;position:fixed;">
-  <h3>Subjects</h3>
-  <ul style="list-style:none;padding:0;">
-    <li><a href="{{ '/' | relative_url }}">🏠 Home</a></li>
-    <li><a href="{{ '/Automation_and_automation_technology/' | relative_url }}">Automation & Automation Technology</a></li>
-    <li><a href="{{ '/Cybernetics_and_Informatics/' | relative_url }}">Cybernetics & Informatics</a></li>
-    <li><a href="{{ '/Electrotechnics_and_electrical_engineering/' | relative_url }}">Electrotechnics & Electrical Engineering</a></li>
-    <li><a href="{{ '/Lekárska_elektronika/' | relative_url }}">Lekárska elektronika</a></li>
-    <li><a href="{{ '/Logické_riadiace_systémy/' | relative_url }}">Logické riadiace systémy</a></li>
-    <li><a href="{{ '/Mechatronics_-_Microprocessors/' | relative_url }}">Mechatronics - Microprocessors</a></li>
-    <li><a href="{{ '/Základy_programovania_-_Programming_Technics/' | relative_url }}">Základy programovania</a></li>
-  </ul>
-</div>
-
-<!-- 🧩 HLAVNÁ ČASŤ STRÁNKY -->
-<div style="margin-left:240px;padding:20px;">
 
 # 🎓 Vyucba – Teaching Repository
 
@@ -61,27 +43,18 @@ Táto šablóna obsahuje:
 
 ## 🪶 Markdown návod / Markdown Tutorial
 
-{% comment %}
-Tu je dôležitá zmena:
-„{{ include MARKDOWN_TUTORIAL.md | markdownify }}“ nefunguje,
-pretože include musí byť vo forme Liquid tagu:
-{% endcomment %}
-
-{% raw %}{% include MARKDOWN_TUTORIAL.md %}{% endraw %}
-
-👉 Tento súbor nájdeš v `_includes/MARKDOWN_TUTORIAL.md`.
+{% capture tutorial %}{% include MARKDOWN_TUTORIAL.md %}{% endcapture %}
+{{ tutorial | markdownify }}
 
 ---
 
 ## 💡 Tipy
 
 - Všetky cesty používajú relatívne odkazy (`relative_url`), aby fungovali priamo na GitHub Pages.  
-- Každý predmet je samostatná podstránka:  
-  napr. [Automation & Automation Technology]({{ '/Automation_and_automation_technology/' | relative_url }})  
+- Každý predmet je samostatná podstránka, napr.:  
+  [Automation & Automation Technology]({{ '/Automation_and_automation_technology/' | relative_url }})  
 - Ak chceš zdieľať len jeden predmet, jednoducho pošli link na jeho stránku.
 
 ---
 
 *Posledná aktualizácia:* {{ site.time | date: "%d.%m.%Y" }}
-
-</div>
