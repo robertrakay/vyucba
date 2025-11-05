@@ -1,3 +1,8 @@
+---
+layout: subject
+title: Vyucba - Home
+---
+
 <div id="side-panel" style="float:left;width:200px;height:100vh;background:#f1f1f1;padding:10px;box-sizing:border-box;position:fixed;">
   <h3>Subjects</h3>
   <ul style="list-style:none;padding:0;">
