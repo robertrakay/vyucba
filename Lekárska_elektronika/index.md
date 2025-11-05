@@ -1,8 +1,9 @@
 ---
 title: Lekárska elektronika
-layout: default
+layout: subject
 has_children: true
 nav_order: 2
+show_sidebar: false
 ---
 
 # Lekárska elektronika
@@ -15,3 +16,4 @@ Brief description of Lekárska elektronika.
 - [Assignments](./assignments/)
 - [Code Examples](./code_examples/)
 - [Instructions](./instructions/)
+
