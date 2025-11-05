@@ -61,6 +61,6 @@ print("Hello, World!")
 
 📘 Viac o Markdown
 
-Oficiálna dokumentácia GitHub Markdown
-Markdown Cheat Sheet
+[Text odkazu](https://example.com)        Oficiálna dokumentácia GitHub Markdown
+[Text odkazu](https://example.com)        Markdown Cheat Sheet
 
