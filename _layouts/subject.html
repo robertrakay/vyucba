@@ -6,11 +6,7 @@
   <link rel="stylesheet" href="{{ '/vyucba/assets/style.css' | relative_url }}">
 </head>
 <body>
-  {% if page.show_sidebar %}
-    {% include sidebar.html %}
-  {% endif %}
-
-  <div style="{% if page.show_sidebar %}margin-left:220px;{% endif %}padding:10px;">
+  <div style="padding:10px;">
     <h1>{{ page.title }}</h1>
     {{ content }}
   </div>
