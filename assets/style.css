@@ -6,36 +6,59 @@ body {
   color: #222;
 }
 
-/* ===== Sidebar ===== */
+/* === SIDEBAR STYLING === */
 #side-panel {
-  float: left;
+  background: #f9f9f9;
+  border-right: 1px solid #ddd;
+  padding: 15px;
   width: 220px;
   height: 100vh;
-  background: #f1f1f1;
-  padding: 10px;
-  box-sizing: border-box;
   position: fixed;
   overflow-y: auto;
-  border-right: 1px solid #ccc;
+  font-family: "Segoe UI", sans-serif;
 }
 
+/* Nadpis v sidebare */
 #side-panel h3 {
   margin-top: 0;
   font-size: 1.2em;
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
 }
 
+/* Zoznam predmetov */
 #side-panel ul {
-  list-style: none;
-  padding: 0;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
 }
 
+#side-panel li {
+  margin: 10px 0;
+  line-height: 1.6em; /* väčšie riadkovanie */
+}
+
+/* Odkazy */
 #side-panel a {
-  color: #003366;
   text-decoration: none;
+  color: #0056b3;
+  display: block;
+  padding: 5px 8px;
+  border-radius: 6px;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
+/* Hover efekt */
 #side-panel a:hover {
-  text-decoration: underline;
+  background: #e6f0ff;
+  color: #000;
+}
+
+/* Ikony (emoji) majú mierny odsadzovací efekt) */
+#side-panel li a::before {
+  content: "• ";
+  color: #888;
 }
 
 /* ===== Obsah ===== */
