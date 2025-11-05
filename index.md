@@ -17,7 +17,9 @@ title: Vyucba - Home
   </ul>
 </div>
 
+
+
 <div style="margin-left:220px;padding:10px;">
   <h1>Welcome to Vyucba!</h1>
-  <p>This site contains teaching materials by subject. Select a subject on the left to begin.</p>
+  <p>This site contains teaching materials for my subjects. </p>
 </div>
