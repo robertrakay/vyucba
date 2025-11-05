@@ -1,8 +1,8 @@
 title: Teaching Repository
 theme: just-the-docs
-url: https://yourusername.github.io/vyucba
-baseurl: ""
+url: "https://robertrakay.github.io"
+baseurl: "/vyucba"
 search_enabled: true
 color_scheme: light
 aux_links:
-  "GitHub": "https://github.com/yourusername/vyucba"
+  "GitHub": "https://github.com/robertrakay/vyucba"
