@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+
+  <!-- Základné štýly (voliteľne pridaj svoj CSS v /assets/style.css) -->
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    #main {
+      margin-left: 240px;
+      padding: 20px;
+    }
+    #side-panel {
+      float: left;
+      width: 220px;
+      height: 100vh;
+      background: #f1f1f1;
+      padding: 10px;
+      box-sizing: border-box;
+      position: fixed;
+    }
+    a {
