@@ -1,6 +1,7 @@
 ---
 layout: subject
 title: Automation and Automation Technology
+show_sidebar: false
 ---
 
 <div style="margin-left:220px;padding:10px;">
@@ -43,4 +44,5 @@ Brief description of Automation and automation technology.
 - [Assignments](./assignments/)
 - [Code Examples](./code_examples/)
 - [Instructions](./instructions/)
+
 
