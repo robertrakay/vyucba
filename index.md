@@ -54,7 +54,7 @@ Táto šablóna obsahuje:
 ## 🪶 Markdown návod / Markdown Tutorial
 
 Ak chceš pridávať poznámky, úlohy alebo kódy v Markdown formáte, pozri:
-{% include MARKDOWN_TUTORIAL.md %}
+{{ include MARKDOWN_TUTORIAL.md  | markdownify }} 
 
 ---
 
