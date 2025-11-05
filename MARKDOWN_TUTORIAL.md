@@ -28,6 +28,8 @@ Kódové bloky
 print("Hello, world!")
 ```
 
+```
+
 
 ## 📚 ŠTRUKTÚRA KAŽDÉHO PREDMETU
 
