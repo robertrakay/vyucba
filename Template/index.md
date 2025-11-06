@@ -1,6 +1,7 @@
 ---
 layout: subject
 title: Názov predmetu / Name of the Subject
+show_sidebar: true
 ---
 # {{ page.title }}
 
