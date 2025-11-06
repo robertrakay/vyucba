@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: subject
 title: Cybernetics and Informatics
 show_sidebar: false
 ---
@@ -59,4 +59,5 @@ Brief description of Cybernetics and Informatics.
 - [Assignments](./assignments/)
 - [Code Examples](./code_examples/)
 - [Instructions](./instructions/)
+
 
