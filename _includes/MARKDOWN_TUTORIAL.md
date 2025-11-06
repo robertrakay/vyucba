@@ -59,7 +59,9 @@ Nečíslovaný zoznam:
 Inline kód:
 
 Použi spätné apostrofy:
+```markdown
 Toto je `inline` kód.
+```
 ---
 ## Blok kódu:
 
