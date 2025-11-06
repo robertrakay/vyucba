@@ -23,20 +23,27 @@ Absolvovaním predmetu študent získa praktické zručnosti pri tvorbe a správ
 <style>
 table {
   border-collapse: collapse;
-  width: 100%;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  width: auto;              /* namiesto 100% – prispôsobí sa obsahu */
+  margin: 1em auto;         /* vycentruje tabuľku */
+  table-layout: auto;       /* umožní dynamické prispôsobenie stĺpcov */
+  max-width: 100%;          /* aby sa nezlomila mimo obrazovku */
 }
 th, td {
   border: 1px solid #444;
-  padding: 8px;
+  padding: 8px 12px;
   vertical-align: top;
+  white-space: nowrap;      /* zabráni zalamovaniu textu v úzkych bunkách */
+}
+td:nth-child(3) {
+  white-space: normal;      /* posledný stĺpec (Detail) môže zalamovať text */
+  min-width: 250px;         /* aby mal dostatočnú šírku na odrážky */
 }
 th {
   background-color: #f2f2f2;
   text-align: center;
 }
 </style>
+
 
 <table>
   <tr>
