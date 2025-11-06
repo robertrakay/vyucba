@@ -1,5 +1,5 @@
 ---
-layout: subject
+layout: default
 title: Názov predmetu / Name of the Subject
 show_sidebar: true
 ---
