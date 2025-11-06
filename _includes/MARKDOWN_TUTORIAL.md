@@ -2,16 +2,18 @@
 
 Tento krátky prehľad ukazuje, ako písať a formátovať text pomocou **Markdown** syntaxe.  
 Markdown je jednoduchý značkovací jazyk, ktorý sa automaticky prevádza na HTML.  
-
+```markdown
+```
 ---
 
 ## ✍️ Nadpisy
 Používaj znak `#` pre nadpisy rôznych úrovní:
-
+```markdown
 # Hlavný nadpis (H1)
 ## Podnadpis (H2)
 ### Menší nadpis (H3)
 #### Najmenší nadpis (H4)
+```
 ---
 ##💬 Textové formátovanie
 *Kurzíva* alebo _kurzíva_  
@@ -24,13 +26,16 @@ Používaj znak `#` pre nadpisy rôznych úrovní:
 [Text odkazu](https://example.com)
 
 ![Alternatívny text obrázka](https://via.placeholder.com/150)
+
 ---
 ##📋 Zoznamy
 Nečíslovaný zoznam:
+
 - Prvá položka
 - Druhá položka
   - Vnorená položka
   - Ďalšia vnorená položka
+  - 
 ---
 ##Číslovaný zoznam:
 1. Prvá vec
