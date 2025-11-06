@@ -22,45 +22,20 @@ Absolvovaním predmetu študent získa praktické zručnosti pri tvorbe a správ
 
 | Týždeň | Náplň | Detail |
 |:------:|:------|:--------|
-| 1 |Úvod do elektrotechnickej dokumentácie | -Základné normy a štandardy
--Typy dokumentácie a ich význam
--Struktúra projektu |
-| 2 |Tvorba projektu a organizácia strán  | -Zakladanie a štruktúrovanie projektu
--Navigácia medzi časťami projektu
--Správa a ukladanie dokumentácie |
-| 3 |Symboly a schématické značky  |-Knižnice symbolov
--Vkladanie prvkov do schém
--Úprava a správa značiek  |
-| 4 |Typy strán a základné schémy  |-Jednopólové a viacpólové schémy
--Funkčné schémy a diagramy
--Cvičenie s rôznymi typmi strán  |
-| 5 |Štruktúrovanie projektu podľa noriem  |-Označovanie zariadení a obvodov
--Systém identifikácie a číslovania
--Vplyv štruktúry na prehľadnosť projektu  |
-| 6 |Práca so zariadeniami a komponentmi  |-Číslovanie zariadení a obvodov
--Správa prístrojov a komponentov
--Evidencia zariadení v projekte  |
-| 7 |Spoje a vodiče  |-Definícia spojov a vodičov
--Pripojenie medzi komponentmi
--Správa káblov a prepojení |
-| 8 |Nastavenia pracovného prostredia  |-Organizácia pracovného priestoru
--Skratky a zrýchlenie práce
--Funkčné texty a poznámky  |
-| 9 |Databázy a knižnice komponentov  |-Vyhľadávanie a import prvkov
--Správa knižníc a článkov
--Tvorba a používanie opakujúcich sa častí  |
-| 10 |Svorky, konektory a riadiace jednotky  |-Návrh svorkovníc a konektorov
--Správa káblových prepojení
--Zapojenie riadiacich systémov  |
-| 11 |Kontrola a vyhodnotenie projektu  |-Kontrolné kroky a odhalenie chýb
--Návrh zlepšení a opravy
--Vytvorenie montážnych podkladov  |
-| 12 |Archivácia, export a tlač dokumentácie  |-Zálohovanie a archivácia projektov
--Export do rôznych formátov
--Tlač a príprava pre odovzdanie  |
-| 13 |Prezentácia študentských projektov  |-Odovzdanie kompletného projektu
--Diskusia a spätná väzba
--Zhrnutie predmetu  |
+| 1 | Úvod do elektrotechnickej dokumentácie | - Základné normy a štandardy<br>- Typy dokumentácie a ich význam<br>- Štruktúra projektu |
+| 2 | Tvorba projektu a organizácia strán | - Zakladanie a štruktúrovanie projektu<br>- Navigácia medzi časťami projektu<br>- Správa a ukladanie dokumentácie |
+| 3 | Symboly a schématické značky | - Knižnice symbolov<br>- Vkladanie prvkov do schém<br>- Úprava a správa značiek |
+| 4 | Typy strán a základné schémy | - Jednopólové a viacpólové schémy<br>- Funkčné schémy a diagramy<br>- Cvičenie s rôznymi typmi strán |
+| 5 | Štruktúrovanie projektu podľa noriem | - Označovanie zariadení a obvodov<br>- Systém identifikácie a číslovania<br>- Vplyv štruktúry na prehľadnosť projektu |
+| 6 | Práca so zariadeniami a komponentmi | - Číslovanie zariadení a obvodov<br>- Správa prístrojov a komponentov<br>- Evidencia zariadení v projekte |
+| 7 | Spoje a vodiče | - Definícia spojov a vodičov<br>- Pripojenie medzi komponentmi<br>- Správa káblov a prepojení |
+| 8 | Nastavenia pracovného prostredia | - Organizácia pracovného priestoru<br>- Skratky a zrýchlenie práce<br>- Funkčné texty a poznámky |
+| 9 | Databázy a knižnice komponentov | - Vyhľadávanie a import prvkov<br>- Správa knižníc a článkov<br>- Tvorba a používanie opakujúcich sa častí |
+| 10 | Svorky, konektory a riadiace jednotky | - Návrh svorkovníc a konektorov<br>- Správa káblových prepojení<br>- Zapojenie riadiacich systémov |
+| 11 | Kontrola a vyhodnotenie projektu | - Kontrolné kroky a odhalenie chýb<br>- Návrh zlepšení a opravy<br>- Vytvorenie montážnych podkladov |
+| 12 | Archivácia, export a tlač dokumentácie | - Zálohovanie a archivácia projektov<br>- Export do rôznych formátov<br>- Tlač a príprava pre odovzdanie |
+| 13 | Prezentácia študentských projektov | - Odovzdanie kompletného projektu<br>- Diskusia a spätná väzba<br>- Zhrnutie predmetu |
+
 
 > 🗒️ *Poznámka:* Doplň podľa harmonogramu semestra, napr. témy cvičení, projektov alebo skúšok.
 
