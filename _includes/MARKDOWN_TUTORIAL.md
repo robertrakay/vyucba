@@ -17,36 +17,43 @@ Používaj znak `#` pre nadpisy rôznych úrovní:
 ---
 ##💬 Textové formátovanie
 *Kurzíva* alebo _kurzíva_  
-
+```markdown
 **Tučné písmo** alebo __tučné písmo__  
 ***Tučné a kurzíva***  
 ~~Preškrtnuté~~
+```
 ---
 ##🔗 Odkazy a 📸 Obrázky
+```markdown
 [Text odkazu](https://example.com)
 
 ![Alternatívny text obrázka](https://via.placeholder.com/150)
-
+```
 ---
 ##📋 Zoznamy
 Nečíslovaný zoznam:
-
+```markdown
 - Prvá položka
 - Druhá položka
   - Vnorená položka
   - Ďalšia vnorená položka
-  - 
+  -
+```
 ---
 ##Číslovaný zoznam:
+```markdown
 1. Prvá vec
 2. Druhá vec
 3. Tretia vec
+```
 ---
 ##📊 Tabuľky
+```markdown
 | Týždeň | Náplň | Detaily |
 |--------|--------|----------|
 | 1 | Úvod do predmetu | Prezentácia |
 | 2 | Základy programovania | Cvičenia |
+```
 ---
 ##💻 Kód
 Inline kód:
@@ -62,13 +69,16 @@ print("Hello, World!")
 ```
 ---
 ## ➕ Citácie
+```markdown
 > Toto je citát alebo zvýraznený text.
 > Môže mať viac riadkov.
+```
 ---
 ##✅ Check-list
+```markdown
 - [x] Hotová úloha
 - [ ] Nehotová úloha
-
+```
 ---
 📘 Viac o Markdown
 
