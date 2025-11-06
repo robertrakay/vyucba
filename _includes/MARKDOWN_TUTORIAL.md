@@ -13,7 +13,7 @@ Používaj znak `#` pre nadpisy rôznych úrovní:
 ## Podnadpis (H2)
 ### Menší nadpis (H3)
 #### Najmenší nadpis (H4)
-
+---
 ##💬 Textové formátovanie
 *Kurzíva* alebo _kurzíva_  
 **Tučné písmo** alebo __tučné písmo__  
