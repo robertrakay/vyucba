@@ -1,0 +1,87 @@
+/* ===== Základné nastavenia ===== */
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  background: #fafafa;
+  color: #222;
+}
+
+/* === SIDEBAR STYLING === */
+#side-panel {
+  background: #f9f9f9;
+  border-right: 1px solid #ddd;
+  padding: 15px;
+  width: 220px;
+  height: 100vh;
+  position: fixed;
+  overflow-y: auto;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Nadpis v sidebare */
+#side-panel h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+/* Zoznam predmetov */
+#side-panel ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+#side-panel li {
+  margin: 10px 0;
+  line-height: 1.6em; /* väčšie riadkovanie */
+}
+
+/* Odkazy */
+#side-panel a {
+  text-decoration: none;
+  color: #0056b3;
+  display: block;
+  padding: 5px 8px;
+  border-radius: 6px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* Hover efekt */
+#side-panel a:hover {
+  background: #e6f0ff;
+  color: #000;
+}
+
+/* Ikony (emoji) majú mierny odsadzovací efekt) */
+#side-panel li a::before {
+  content: "• ";
+  color: #888;
+}
+
+/* ===== Obsah ===== */
+main {
+  padding: 20px;
+}
+
+main.with-sidebar {
+  margin-left: 240px;
+}
+
+/* ===== Markdown štýly ===== */
+h1, h2, h3, h4 {
+  color: #003366;
+}
+
+a {
+  color: #0066cc;
+}
+
+pre, code {
+  background: #eee;
+  padding: 3px 5px;
+  border-radius: 4px;
+  font-family: Consolas, monospace;
+}
