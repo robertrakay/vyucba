@@ -1,6 +1,98 @@
 ---
-layout: default
+layout: page
 ---
-<div id="content" style="padding:20px;">
+
+{% if page.show_sidebar %}
+<style>
+  #custom-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    background: #f8f9fa;
+    padding: 10px;
+    box-sizing: border-box;
+    border-right: 1px solid #ccc;
+    overflow-y: auto;
+    min-width: 150px;
+    max-width: 400px;
+    z-index: 100; /* nech je nad obsahom */
+  }
+  #custom-sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  #custom-sidebar a {
+    text-decoration: none;
+    color: #333;
+  }
+  #custom-sidebar a:hover {
+    text-decoration: underline;
+  }
+  #main-content {
+    margin-left: 260px; /* posun obsahu doprava */
+    padding: 20px;
+  }
+  #resizer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    cursor: ew-resize;
+    background: transparent;
+  }
+</style>
+
+  <div id="side-panel">
+    <h3>Subjects</h3>
+    <ul style="list-style:none; padding:0;">
+      <li><a href="{{ '/' | relative_url }}">🏠 Home</a></li>
+      <li><a href="{{ '/Automation_and_automation_technology/' | relative_url }}">Automation & Automation Technology</a></li>
+      <li><a href="{{ '/Cybernetics_and_Informatics/' | relative_url }}">Cybernetics & Informatics</a></li>
+      <li><a href="{{ '/Electrotechnics_and_electrical_engineering/' | relative_url }}">Electrotechnics & Electrical Engineering</a></li>
+      <li><a href="{{ '/Lekárska_elektronika/' | relative_url }}">Lekárska elektronika</a></li>
+      <li><a href="{{ '/Logické_riadiace_systémy/' | relative_url }}">Logické riadiace systémy</a></li>
+      <li><a href="{{ '/Mechatronics_-_Microprocessors/' | relative_url }}">Mechatronics - Microprocessors</a></li>
+      <li><a href="{{ '/Základy_programovania_-_Programming_Technics/' | relative_url }}">Základy programovania</a></li>
+      <li><a href="{{ '/Projektová_Dokumentácia/' | relative_url }}">Projektová dokumentácia</a></li>
+      <li><a href="{{ '/Digitalizácia_Priemyslu/' | relative_url }}">Digitalizácia Priemyslu</a></li>
+      <li><a href="{{ '/Prostriedky_Priemyselnej_Automatizácie/' | relative_url }}">Prostiedky Priemyselnej Automatizacie</a></li>
+      <li><a href="{{ '/Bezpečnostné_Systémy/' | relative_url }}">Bezpečnostné Systémy</a></li>
+      <li><a href="{{ '/Extra/' | relative_url }}">Extra</a></li>
+    </ul>
+    <div id="resizer"></div>
+  </div>
+{% endif %}
+
+<div id="main-content" style="margin-left:{% if page.show_sidebar %}260px{% else %}0{% endif %};">
   {{ content }}
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const sidebar = document.getElementById("side-panel");
+    const resizer = document.getElementById("resizer");
+    const mainContent = document.getElementById("main-content");
+    let isResizing = false;
+
+    if (resizer && sidebar && mainContent) {
+      resizer.addEventListener("mousedown", function (e) {
+        isResizing = true;
+        document.body.style.cursor = "ew-resize";
+      });
+
+      window.addEventListener("mousemove", function (e) {
+        if (!isResizing) return;
+        const newWidth = Math.min(Math.max(e.clientX, 150), 400);
+        sidebar.style.width = newWidth + "px";
+        mainContent.style.marginLeft = newWidth + 10 + "px";
+      });
+
+      window.addEventListener("mouseup", function () {
+        isResizing = false;
+        document.body.style.cursor = "default";
+      });
+    }
+  });
+</script>
