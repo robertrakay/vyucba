@@ -1,23 +1,76 @@
-tra<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="sk">
 <head>
   <meta charset="UTF-8">
   <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* 🧭 Bočný panel */
+    #side-panel {
+      background: #f1f1f1;
+      width: 250px; /* Štandardná šírka */
+      min-width: 150px;
+      max-width: 400px;
+      box-sizing: border-box;
+      border-right: 1px solid #ccc;
+      overflow-y: auto;
+      position: relative;
+      padding: 10px;
+    }
+
+    /* 🔹 Resizer – uchopenie na ťahanie */
+    #resizer {
+      width: 5px;
+      cursor: ew-resize;
+      background: #ccc;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    /* 🧱 Hlavný obsah */
+    #main-content {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    /* Odkazy v sidebare */
+    #side-panel ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #side-panel a {
+      color: black;
+      text-decoration: none;
+      display: block;
+      padding: 5px 0;
+    }
+
+    #side-panel a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
-<body style="margin:0; font-family: sans-serif;">
-
+<body>
   {% if page.show_sidebar %}
   <!-- 🧭 Bočný panel -->
-  <div id="side-panel" 
-       style="position: fixed; top:0; left:0; bottom:0;
-              width:220px; background:#f1f1f1;
-              padding:10px; box-sizing:border-box;
-              border-right:1px solid #ccc; overflow-y:auto;">
+  <div id="side-panel">
     <h3>Subjects</h3>
-    <ul style="list-style:none; padding:0; margin:0;">
+    <ul>
       <li><a href="{{ '/' | relative_url }}">🏠 Home</a></li>
       <li><a href="{{ '/Automation_and_automation_technology/' | relative_url }}">Automation & Automation Technology</a></li>
       <li><a href="{{ '/Cybernetics_and_Informatics/' | relative_url }}">Cybernetics & Informatics</a></li>
@@ -32,13 +85,38 @@ tra<!DOCTYPE html>
       <li><a href="{{ '/Bezpečnostné_Systémy/' | relative_url }}">Bezpečnostné Systémy</a></li>
       <li><a href="{{ '/Extra/' | relative_url }}">Extra</a></li>
     </ul>
+    <div id="resizer"></div>
   </div>
   {% endif %}
 
   <!-- 🧱 Hlavný obsah -->
-  <div style="margin-left:{% if page.show_sidebar %}240px{% else %}0{% endif %}; padding:20px; min-height:100vh;">
+  <div id="main-content">
     {{ content }}
   </div>
 
+  <script>
+    // 🧩 Funkcia na zmenu šírky sidebaru ťahaním
+    const resizer = document.getElementById('resizer');
+    const sidebar = document.getElementById('side-panel');
+    let isResizing = false;
+
+    resizer.addEventListener('mousedown', (e) => {
+      isResizing = true;
+      document.body.style.cursor = 'ew-resize';
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!isResizing) return;
+      const newWidth = e.clientX;
+      if (newWidth > 150 && newWidth < 400) {
+        sidebar.style.width = newWidth + 'px';
+      }
+    });
+
+    document.addEventListener('mouseup', () => {
+      isResizing = false;
+      document.body.style.cursor = 'default';
+    });
+  </script>
 </body>
 </html>
