@@ -1,5 +1,5 @@
 ---
-layout: subject
+layout: main
 title: Vyucba - Home
 show_sidebar: true
 ---
