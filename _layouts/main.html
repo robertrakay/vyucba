@@ -1,0 +1,16 @@
+---
+layout: default
+---
+{% if page.show_sidebar %}
+  <div id="sidebar" style="width:250px;float:left;background:#f8f9fa;height:100vh;padding:10px;border-right:1px solid #ddd;">
+    <h3>Subjects</h3>
+    <ul style="list-style:none;padding:0;">
+      <li><a href="{{ '/' | relative_url }}">🏠 Home</a></li>
+      <li><a href="{{ '/Extra/' | relative_url }}">Extra</a></li>
+      <li><a href="{{ '/Template/' | relative_url }}">Template</a></li>
+    </ul>
+  </div>
+{% endif %}
+<div id="content" style="margin-left:{% if page.show_sidebar %}260px{% else %}0{% endif %};padding:20px;">
+  {{ content }}
+</div>
