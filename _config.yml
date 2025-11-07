@@ -1,4 +1,5 @@
 title: Teaching Repository
+description: "Educational materials for various subjects"
 remote_theme: "cotes2020/jekyll-theme-chirpy"
 
 url: "https://robertrakay.github.io"
@@ -16,4 +17,30 @@ plugins:
   - jekyll-feed
 
 aux_links:
-  "GitHub": "https://github.com/robertrakay/vyucba"
+  "GitHub Repository": "https://github.com/robertrakay/vyucba"
+
+navbar:
+  - title: 🏠 Home
+    url: /
+  - title: 📘 Subjects
+    sublinks:
+      - title: Electrotechnics
+        url: /Electrotechnics_and_electrical_engineering/
+      - title: Automation
+        url: /Automation_and_automation_technology/
+      - title: Cybernetics
+        url: /Cybernetics_and_Informatics/
+      - title: Mechatronics
+        url: /Mechatronics_-_Microprocessors/
+      - title: Digitalizácia Priemyslu
+        url: /Digitalizácia_Priemyslu/
+      - title: Lekárska elektronika
+        url: /Lekárska_elektronika/
+      - title: Logické Riadiace Systémy
+        url: /Logické_Riadiace_Systémy/
+      - title: Projektová Dokumentácia
+        url: /Projektová_Dokumentácia/
+      - title: Prostriedky Priemyselnej Automatizácie
+        url: /Prostriedky_Priemyselnej_Automatizácie/
+      - title: Základy Programovania
+        url: /Základy_Programovania/
