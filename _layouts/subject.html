@@ -2,9 +2,9 @@
 layout: page
 ---
 
+{% if page.show_sidebar %}
 <style>
-  /* --- Sidebar --- */
-  #side-panel {
+  #custom-sidebar {
     position: fixed;
     top: 0;
     left: 0;
@@ -15,11 +15,25 @@ layout: page
     box-sizing: border-box;
     border-right: 1px solid #ccc;
     overflow-y: auto;
-    resize: horizontal;
     min-width: 150px;
     max-width: 400px;
+    z-index: 100; /* nech je nad obsahom */
   }
-
+  #custom-sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  #custom-sidebar a {
+    text-decoration: none;
+    color: #333;
+  }
+  #custom-sidebar a:hover {
+    text-decoration: underline;
+  }
+  #main-content {
+    margin-left: 260px; /* posun obsahu doprava */
+    padding: 20px;
+  }
   #resizer {
     position: absolute;
     top: 0;
@@ -28,29 +42,8 @@ layout: page
     cursor: ew-resize;
     background: transparent;
   }
-
-  #main-content {
-    transition: margin-left 0.2s ease;
-    padding: 20px;
-    min-height: 100vh;
-  }
-
-  @media (max-width: 768px) {
-    #side-panel {
-      position: relative;
-      width: 100%;
-      max-width: none;
-      border-right: none;
-      border-bottom: 1px solid #ccc;
-      resize: none;
-    }
-    #main-content {
-      margin-left: 0 !important;
-    }
-  }
 </style>
 
-{% if page.show_sidebar %}
   <div id="side-panel">
     <h3>Subjects</h3>
     <ul style="list-style:none; padding:0;">
