@@ -101,8 +101,31 @@ th {
     <td>- Príprava experimentov, úvod do biomeraní</td>
   </tr>
   <tr>
-    <td>9</td>
-    <td>9. Pi
+     <td>9</td>
+    <td>9. Pilotné meranie</td>
+    <td>- Testovacie merania, zber experimentálnych dát</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>10. Hlavné meranie / syntetické dáta</td>
+    <td>- Realizácia hlavného merania, generovanie dát</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>11. Spracovanie a protokol – odovzdať do konca semestra</td>
+    <td>- Vyhodnotenie dát, spracovanie výsledkov</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>12. Syntetické dáta</td>
+    <td>- Analýza umele vytvorených signálov</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>13. Obhajoba zadaní a hodnotenie</td>
+    <td>- Prezentácia a obhajoba projektov</td>
+  </tr>
+</table>
 
 > 🗒️ *Poznámka:* Doplň podľa harmonogramu semestra, napr. témy cvičení, projektov alebo skúšok.
 
@@ -151,4 +174,5 @@ Brief description of Lekárska elektronika.
 - [Assignments](./assignments/)
 - [Code Examples](./code_examples/)
 - [Instructions](./instructions/)
+
 
