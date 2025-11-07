@@ -1,0 +1,162 @@
+---
+layout: default
+title: Bezpečnostné Systémy
+show_sidebar: false
+---
+# {{ page.title }}
+
+---
+
+## 🧭 Prehľad / Course Overview
+Krátky popis predmetu.  
+Absolvovaním predmetu študent získa prehľad o priemyselných riadiacich systémoch, rôznych typoch regulátorov a základné poznatky z oblasti robotiky. Oboznámi sa aj s elektropneumatickými systémami a priemyselnými senzorovými systémami, ktoré si bude môcť prakticky overiť na experimentálnych stendoch v laboratóriu. Zároveň nadobudne vedomosti z navrhovania a realizácie logických obvodov, ktoré dokáže najskôr nasimulovať a následne zrealizovať pomocou elektrických a pneumatických komponentov.
+
+**Ciele predmetu:**
+- Cieľ 1 – napr. pochopiť princípy riadenia systémov  
+- Cieľ 2 – naučiť sa používať základné softvérové nástroje  
+- Cieľ 3 – rozvíjať praktické zručnosti v laboratórnych cvičeniach  
+
+---
+
+## 📅 Týždenný prehľad / Weekly Overview
+
+<style>
+table {
+  border-collapse: collapse;
+  width: auto;              /* namiesto 100% – prispôsobí sa obsahu */
+  margin: 1em auto;         /* vycentruje tabuľku */
+  table-layout: auto;       /* umožní dynamické prispôsobenie stĺpcov */
+  max-width: 100%;          /* aby sa nezlomila mimo obrazovku */
+}
+th, td {
+  border: 1px solid #444;
+  padding: 8px 12px;
+  vertical-align: top;
+  white-space: nowrap;      /* zabráni zalamovaniu textu v úzkych bunkách */
+}
+td:nth-child(3) {
+  white-space: normal;      /* posledný stĺpec (Detail) môže zalamovať text */
+  min-width: 250px;         /* aby mal dostatočnú šírku na odrážky */
+}
+th {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+</style>
+
+<table>
+  <tr>
+    <th>Týždeň</th>
+    <th>Náplň</th>
+    <th>Detail</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>1. Úvod do funkčnej bezpečnosti v priemysle</td>
+    <td>- Základné normy (IEC 61508, ISO 13849)</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>2. Bezpečnostné funkcie a Safety Life Cycle</td>
+    <td>- Proces návrhu a implementácie bezpečnostných funkcií</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>3. SIL – Safety Integrity Level</td>
+    <td>- Kategorizácia a výpočet úrovní spoľahlivosti</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>4. PL – Performance Level</td>
+    <td>- Hodnotenie podľa ISO 13849-1</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>5. Bezpečnostné senzory – typy a aplikácie</td>
+    <td>- Optické, indukčné, mechanické, RFID senzory</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>6. Bezpečnostné aktuátory a výstupné prvky</td>
+    <td>- Relé, ventily, pohony, stýkače so spätnou väzbou</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>7. Safety PLC – architektúra a princíp činnosti</td>
+    <td>- Redundantné procesory, diagnostika, bezpečnostné I/O</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>8. Programovanie bezpečnostných funkcií</td>
+    <td>- Certifikované bloky, testovanie, validácia logiky</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>9. Diagnostika, testovanie a údržba bezpečnostných systémov</td>
+    <td>- Periodické testy, logovanie chýb, údržba podľa IEC 61511</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>10. Posudzovanie rizík a návrh bezpečnostných systémov</td>
+    <td>- FMEA, HAZOP, LOPA analýzy</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>11. Validácia a verifikácia bezpečnostných systémov</td>
+    <td>- Testovanie proti špecifikáciám, dokumentácia</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>12. Kybernetická bezpečnosť a Safety</td>
+    <td>- Prepojenie medzi bezpečnosťou a ochranou pred útokmi</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>13. Prezentácie študentských projektov</td>
+    <td>- Diskusia a hodnotenie návrhov</td>
+  </tr>
+</table>
+
+> 🗒️ *Poznámka:* Doplň podľa harmonogramu semestra, napr. témy cvičení, projektov alebo skúšok.
+
+---
+
+## 🧩 Doplnky / Addons
+
+### 💻 Code Examples
+Odkazy alebo ukážky zdrojových kódov:  
+- [Ukážka 1 – Blikanie LED (Arduino)](Code_examples/example1.md)  
+- [Ukážka 2 – Čítanie senzora](Code_examples/example2.md)
+
+---
+
+### 🌐 Interesting Links
+Užitočné odkazy k predmetu:  
+- [Oficiálna dokumentácia Pythonu](https://docs.python.org/)  
+- [Simulátor Wokwi](https://wokwi.com)  
+- [Falstad obvody](https://falstad.com/circuit/)
+
+---
+
+### 🧾 Assignments
+Zadania pre študentov:  
+- [Assignment 1](Assignments/assignment1.md)  
+- [Assignment 2](Assignments/assignment2.md)
+
+---
+
+### ⚙️ Simulator
+Interaktívne simulátory:  
+- 🔗 [Open in Wokwi Simulator](https://wokwi.com)  
+- 🔗 [Try Jupyter Online](https://jupyter.org/try-jupyter)  
+- 🔗 [CircuitJS Online](https://www.falstad.com/circuit/)
+
+---
+## 📚 Structure
+- [Notes](./notes/)
+- [Assignments](./assignments/)
+- [Code Examples](./code_examples/)
+- [Instructions](./instructions/)
+
+---
+*Posledná aktualizácia:* {{ site.time | date: "%d.%m.%Y" }}
