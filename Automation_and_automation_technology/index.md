@@ -1,5 +1,5 @@
 ---
-layout: subject
+layout: page
 title: Automation and Automation Technology
 show_sidebar: false
 
@@ -45,6 +45,35 @@ Brief description of Automation and automation technology.
 - [Assignments](./assignments/)
 - [Code Examples](./code_examples/)
 - [Instructions](./instructions/)
+
+
+---
+# Automation and Automation Technology
+
+## 🎯 Course Overview
+Brief description of Automation and automation technology.
+
+## 📚 Structure
+- [Notes](./notes/)
+- [Assignments](./assignments/)
+- [Code Examples](./code_examples/)
+- [Instructions](./instructions/)
+
+## 🗓️ Semester Plan
+
+| Týždeň | Náplň | Detail |
+|--------|--------|--------|
+| 1 |  |  |
+| 2 |  |  |
+| 3 |  |  |
+| 4 |  |  |
+| 5 |  |  |
+| 6 |  |  |
+| 7 |  |  |
+| 8 |  |  |
+| 9 |  |  |
+| 10 |  |  |
+
 
 
 
