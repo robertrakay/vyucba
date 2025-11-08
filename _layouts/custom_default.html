@@ -8,135 +8,74 @@
   <style>
     body {
       margin: 0;
-      font-family: sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       display: flex;
-      height: 100vh;
+      min-height: 100vh;
       overflow: hidden;
     }
 
-    /* 🧭 Bočný panel */
     #side-panel {
-      background: #f1f1f1;
+      background: #f8f9fa;
       width: 250px;
       min-width: 150px;
       max-width: 400px;
-      box-sizing: border-box;
       border-right: 1px solid #ccc;
+      box-sizing: border-box;
       overflow-y: auto;
-      position: relative;
       padding: 10px;
-      transition: width 0.2s ease, transform 0.2s ease;
+      transition: transform 0.3s ease;
     }
 
-    /* 🔹 Resizer */
-    #resizer {
-      width: 5px;
-      cursor: ew-resize;
-      background: #ccc;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
+    #side-panel.hidden {
+      transform: translateX(-100%);
     }
 
-    /* 🧱 Hlavný obsah */
+    #sidebar-toggle {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 999;
+      background: #007acc;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 6px 10px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    #sidebar-toggle:hover {
+      background: #005fa3;
+    }
+
     #main-content {
       flex: 1;
       padding: 20px;
       overflow-y: auto;
     }
-
-    /* 📱 Skrytie sidebaru */
-    #side-panel.closed {
-      transform: translateX(-100%);
-    }
-
-    /* 🧭 Odkazy */
-    #side-panel ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    #side-panel a {
-      color: black;
-      text-decoration: none;
-      display: block;
-      padding: 5px 0;
-    }
-
-    #side-panel a:hover {
-      text-decoration: underline;
-    }
-
-    /* 🔘 Tlačidlo Toggle */
-    #sidebar-toggle {
-      position: fixed;
-      top: 10px;
-      left: 10px;
-      background: #007bff;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      font-size: 20px;
-      padding: 5px 10px;
-      cursor: pointer;
-      z-index: 999;
-      transition: background 0.3s;
-    }
-
-    #sidebar-toggle:hover {
-      background: #0056b3;
-    }
   </style>
 </head>
 
 <body>
-{% if page.show_sidebar != false %}
-  <!-- 🔘 Tlačidlo na zapnutie/vypnutie -->
-  <button id="sidebar-toggle" title="Toggle sidebar">≡</button>
-  {% include sidebar.html %}
-{% endif %}
+  {% if page.show_sidebar != false %}
+    <button id="sidebar-toggle" title="Zobraziť / Skryť menu">☰</button>
+    {% include sidebar.html %}
+  {% endif %}
 
-
-  <!-- 🧱 Hlavný obsah -->
   <div id="main-content">
     {{ content }}
   </div>
 
   <script>
-    const sidebar = document.getElementById('side-panel');
-    const resizer = document.getElementById('resizer');
-    const toggle = document.getElementById('sidebar-toggle');
-    let isResizing = false;
-
-    // 🧩 Toggle otváranie / zatváranie
-    if (toggle && sidebar) {
-      toggle.addEventListener('click', () => {
-        sidebar.classList.toggle('closed');
-      });
-    }
-
-    // ✋ Resizing myšou
-    if (resizer && sidebar) {
-      resizer.addEventListener('mousedown', (e) => {
-        isResizing = true;
-        document.body.style.cursor = 'ew-resize';
-      });
-
-      document.addEventListener('mousemove', (e) => {
-        if (!isResizing) return;
-        const newWidth = e.clientX;
-        if (newWidth > 150 && newWidth < 400) {
-          sidebar.style.width = newWidth + 'px';
-        }
-      });
-
-      document.addEventListener('mouseup', () => {
-        isResizing = false;
-        document.body.style.cursor = 'default';
-      });
-    }
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleBtn = document.getElementById("sidebar-toggle");
+      const sidebar = document.getElementById("side-panel");
+      if (toggleBtn && sidebar) {
+        toggleBtn.addEventListener("click", () => {
+          sidebar.classList.toggle("hidden");
+        });
+      }
+    });
   </script>
 </body>
 </html>
