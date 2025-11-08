@@ -1,11 +1,46 @@
 ---
-layout: page
+layout: null
 ---
 
-{% if page.show_sidebar != false %}
-  {% include sidebar.html %}
-{% endif %}
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
 
-<div id="main-content" style="padding:20px;">
-  {{ content }}
-</div>
+  <!-- Použi Chirpy štýly -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body class="{% if page.show_sidebar == false %}no-sidebar{% endif %}">
+  <div class="page-wrapper">
+
+    {% if page.show_sidebar != false %}
+      <aside id="side-panel">
+        {% include sidebar.html %}
+      </aside>
+    {% endif %}
+
+    <main id="main-content">
+      <article class="page-content">
+        {{ content }}
+      </article>
+    </main>
+
+  </div>
+
+  <script>
+    // Prípadne tvoj toggle, ak chceš zachovať:
+    document.addEventListener("DOMContentLoaded", () => {
+      const sidebar = document.getElementById("side-panel");
+      const toggleBtn = document.getElementById("sidebar-toggle");
+      if (toggleBtn && sidebar) {
+        toggleBtn.addEventListener("click", () => {
+          sidebar.classList.toggle("hidden");
+        });
+      }
+    });
+  </script>
+</body>
+</html>
