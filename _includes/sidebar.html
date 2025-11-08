@@ -1,17 +1,151 @@
-<div id="side-panel">
-  <h3>Subjects</h3>
-  <ul style="list-style:none;padding:0;">
-    <li><a href="{{ '/' | relative_url }}">🏠 Home</a></li>
-    <li><a href="{{ '/Automation_and_automation_technology/' | relative_url }}">Automation & Automation Technology</a></li>
-    <li><a href="{{ '/Cybernetics_and_Informatics/' | relative_url }}">Cybernetics & Informatics</a></li>
-    <li><a href="{{ '/Electrotechnics_and_electrical_engineering/' | relative_url }}">Electrotechnics & Electrical Engineering</a></li>
-    <li><a href="{{ '/Lekárska_elektronika/' | relative_url }}">Lekárska elektronika</a></li>
-    <li><a href="{{ '/Logické_riadiace_systémy/' | relative_url }}">Logické riadiace systémy</a></li>
-    <li><a href="{{ '/Mechatronics_-_Microprocessors/' | relative_url }}">Mechatronics - Microprocessors</a></li>
-    <li><a href="{{ '/Základy_programovania_-_Programming_Technics/' | relative_url }}">Základy programovania</a></li>
-    <li><a href="{{ '/Digitalizácia_Priemyslu/' | relative_url }}">Digitalizácia Priemyslu</a></li>
-    <li><a href="{{ '/Prostriedky_Priemyselnej_Automatizácie/' | relative_url }}">Prostiedky Priemyselnej Automatizacie</a></li>
-    <li><a href="{{ '/Bezpečnostné_Systémy/' | relative_url }}">Bezpečnostné Systémy</a></li>
-    <li><a href="{{ '/Extra/' | relative_url }}">Extra</a></li>
-  </ul>
+<div id="sidebar-container">
+
+  <!-- 🔘 Tlačidlo na zbalenie -->
+  <button id="sidebar-toggle" title="Toggle sidebar">≡</button>
+
+  <!-- 🧭 Sidebar -->
+  <div id="side-panel">
+    <h3>📘 Subjects</h3>
+    <ul>
+      <li><a href="{{ '/' | relative_url }}">🏠 Home</a></li>
+      <li><a href="{{ '/Automation_and_automation_technology/' | relative_url }}">Automation & Automation Technology</a></li>
+      <li><a href="{{ '/Cybernetics_and_Informatics/' | relative_url }}">Cybernetics & Informatics</a></li>
+      <li><a href="{{ '/Electrotechnics_and_electrical_engineering/' | relative_url }}">Electrotechnics & Electrical Engineering</a></li>
+      <li><a href="{{ '/Lekárska_elektronika/' | relative_url }}">Lekárska elektronika</a></li>
+      <li><a href="{{ '/Logické_riadiace_systémy/' | relative_url }}">Logické riadiace systémy</a></li>
+      <li><a href="{{ '/Mechatronics_-_Microprocessors/' | relative_url }}">Mechatronics - Microprocessors</a></li>
+      <li><a href="{{ '/Základy_programovania_-_Programming_Technics/' | relative_url }}">Základy programovania</a></li>
+      <li><a href="{{ '/Digitalizácia_Priemyslu/' | relative_url }}">Digitalizácia Priemyslu</a></li>
+      <li><a href="{{ '/Prostriedky_Priemyselnej_Automatizácie/' | relative_url }}">Prostriedky Priemyselnej Automatizácie</a></li>
+      <li><a href="{{ '/Bezpečnostné_Systémy/' | relative_url }}">Bezpečnostné Systémy</a></li>
+      <li><a href="{{ '/Extra/' | relative_url }}">Extra</a></li>
+    </ul>
+    <div id="resizer"></div>
+  </div>
+
 </div>
+
+<style>
+  /* --- 🧭 Sidebar základ --- */
+  #sidebar-container {
+    position: relative;
+  }
+
+  #side-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    min-width: 150px;
+    max-width: 400px;
+    background: var(--sidebar-bg, #f8f9fa);
+    border-right: 1px solid var(--border-color, #ddd);
+    box-sizing: border-box;
+    overflow-y: auto;
+    transition: transform 0.25s ease, width 0.15s ease;
+    padding: 1rem;
+    font-size: 0.95rem;
+    z-index: 100;
+  }
+
+  #side-panel h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: var(--heading-color, #222);
+  }
+
+  #side-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #side-panel li a {
+    display: block;
+    padding: 6px 0;
+    text-decoration: none;
+    color: var(--text-color, #222);
+  }
+
+  #side-panel li a:hover {
+    text-decoration: underline;
+  }
+
+  /* --- 🔘 Tlačidlo toggle --- */
+  #sidebar-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: var(--btn-bg, #007bff);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 200;
+    transition: background 0.3s;
+  }
+
+  #sidebar-toggle:hover {
+    background: #0056b3;
+  }
+
+  /* --- ✋ Resizer --- */
+  #resizer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    cursor: ew-resize;
+    background: transparent;
+  }
+
+  /* --- 📱 Responsívne správanie --- */
+  @media (max-width: 768px) {
+    #side-panel {
+      transform: translateX(-100%);
+    }
+    #side-panel.open {
+      transform: translateX(0);
+    }
+  }
+
+  @media (min-width: 769px) {
+    #side-panel.closed {
+      transform: translateX(-100%);
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const sidebar = document.getElementById("side-panel");
+    const toggle = document.getElementById("sidebar-toggle");
+    const resizer = document.getElementById("resizer");
+    let isResizing = false;
+
+    // 🔘 Toggle otváranie / zatváranie sidebaru
+    toggle.addEventListener("click", function () {
+      sidebar.classList.toggle("closed");
+    });
+
+    // ✋ Resizing myšou
+    resizer.addEventListener("mousedown", function (e) {
+      isResizing = true;
+      document.body.style.cursor = "ew-resize";
+    });
+
+    document.addEventListener("mousemove", function (e) {
+      if (!isResizing) return;
+      const newWidth = Math.min(Math.max(e.clientX, 150), 400);
+      sidebar.style.width = newWidth + "px";
+    });
+
+    document.addEventListener("mouseup", function () {
+      isResizing = false;
+      document.body.style.cursor = "default";
+    });
+  });
+</script>
