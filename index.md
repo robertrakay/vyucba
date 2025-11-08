@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: custom_default
 title: Vyucba - Home
 show_sidebar: true
 ---
