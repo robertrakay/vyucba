@@ -24,6 +24,7 @@
       overflow-y: auto;
       padding: 10px;
       transition: transform 0.3s ease;
+      flex-shrink: 0; /* dôležité, aby sa hlavný obsah neposúval pod sidebar */
     }
 
     #side-panel.hidden {
@@ -53,13 +54,21 @@
       padding: 20px;
       overflow-y: auto;
     }
+
+    /* Ak sidebar neexistuje, hlavný obsah zaberie celú šírku */
+    .no-sidebar #main-content {
+      margin-left: 0;
+    }
   </style>
 </head>
 
-<body>
+<body class="{% if page.show_sidebar == false %}no-sidebar{% endif %}">
+
   {% if page.show_sidebar != false %}
-    <button id="sidebar-toggle" title="Zobraziť / Skryť menu">☰</button>
-    {% include sidebar.html %}
+    <div id="side-panel">
+      <button id="sidebar-toggle" title="Zobraziť / Skryť menu">☰</button>
+      {% include sidebar.html %}
+    </div>
   {% endif %}
 
   <div id="main-content">
