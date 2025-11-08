@@ -92,11 +92,12 @@
 </head>
 
 <body>
-  {% if page.show_sidebar %}
-    <!-- 🔘 Tlačidlo na zapnutie/vypnutie -->
-    <button id="sidebar-toggle" title="Toggle sidebar">≡</button>
-    {% include sidebar.html %}
-  {% endif %}
+{% if page.show_sidebar != false %}
+  <!-- 🔘 Tlačidlo na zapnutie/vypnutie -->
+  <button id="sidebar-toggle" title="Toggle sidebar">≡</button>
+  {% include sidebar.html %}
+{% endif %}
+
 
   <!-- 🧱 Hlavný obsah -->
   <div id="main-content">
