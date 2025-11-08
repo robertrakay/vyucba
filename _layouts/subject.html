@@ -1,6 +1,11 @@
 ---
 layout: page
 ---
-<div id="content" style="padding:20px;">
+
+{% if page.show_sidebar != false %}
+  {% include sidebar.html %}
+{% endif %}
+
+<div id="main-content" style="padding:20px;">
   {{ content }}
 </div>
