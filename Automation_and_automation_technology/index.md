@@ -35,8 +35,8 @@ Brief description of Automation and automation technology.
 
 | Týždeň | Náplň | Detail |
 |--------|--------|--------|
-| 1 |  |  |
-| 2 |  |  |
+| 1 |  |[week1](./vyucba/Automation_and_automation_technology/Weeks/week1/)  |
+| 2 |  |[week2](./vyucba/Automation_and_automation_technology/Weeks/week2/)  |
 | 3 |  |  |
 | 4 |  |  |
 | 5 |  |  |
@@ -71,4 +71,5 @@ Brief description of Automation and automation technology.
 <tr><td>11</td><td><a href='/vyucba/Automation_and_automation_technology/Weeks/week11/'>Week 11</a></td></tr>
 <tr><td>12</td><td><a href='/vyucba/Automation_and_automation_technology/Weeks/week12/'>Week 12</a></td></tr>
 <tr><td>13</td><td><a href='/vyucba/Automation_and_automation_technology/Weeks/week13/'>Week 13</a></td></tr>
+
 </tbody></table>
