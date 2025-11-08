@@ -1,7 +1,10 @@
 ---
-layout: subject
 title: Automation and Automation Technology
+layout: subject
+has_children: true
+nav_order: 2
 show_sidebar: false
+---
 ---
 
 ---
@@ -44,6 +47,7 @@ Brief description of Automation and automation technology.
 | 8 |  |  |
 | 9 |  |  |
 | 10 |  |  |
+
 
 
 
