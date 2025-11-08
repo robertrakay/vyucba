@@ -17,7 +17,7 @@
     /* 🧭 Bočný panel */
     #side-panel {
       background: #f1f1f1;
-      width: 250px; /* Štandardná šírka */
+      width: 250px;
       min-width: 150px;
       max-width: 400px;
       box-sizing: border-box;
@@ -25,9 +25,10 @@
       overflow-y: auto;
       position: relative;
       padding: 10px;
+      transition: width 0.2s ease, transform 0.2s ease;
     }
 
-    /* 🔹 Resizer – uchopenie na ťahanie */
+    /* 🔹 Resizer */
     #resizer {
       width: 5px;
       cursor: ew-resize;
@@ -45,7 +46,12 @@
       overflow-y: auto;
     }
 
-    /* Odkazy v sidebare */
+    /* 📱 Skrytie sidebaru */
+    #side-panel.closed {
+      transform: translateX(-100%);
+    }
+
+    /* 🧭 Odkazy */
     #side-panel ul {
       list-style: none;
       padding: 0;
@@ -62,31 +68,34 @@
     #side-panel a:hover {
       text-decoration: underline;
     }
+
+    /* 🔘 Tlačidlo Toggle */
+    #sidebar-toggle {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 20px;
+      padding: 5px 10px;
+      cursor: pointer;
+      z-index: 999;
+      transition: background 0.3s;
+    }
+
+    #sidebar-toggle:hover {
+      background: #0056b3;
+    }
   </style>
 </head>
 
 <body>
   {% if page.show_sidebar %}
-  <!-- 🧭 Bočný panel -->
-  <div id="side-panel">
-    <h3>Subjects</h3>
-    <ul>
-      <li><a href="{{ '/' | relative_url }}">🏠 Home</a></li>
-      <li><a href="{{ '/Automation_and_automation_technology/' | relative_url }}">Automation & Automation Technology</a></li>
-      <li><a href="{{ '/Cybernetics_and_Informatics/' | relative_url }}">Cybernetics & Informatics</a></li>
-      <li><a href="{{ '/Electrotechnics_and_electrical_engineering/' | relative_url }}">Electrotechnics & Electrical Engineering</a></li>
-      <li><a href="{{ '/Lekárska_elektronika/' | relative_url }}">Lekárska elektronika</a></li>
-      <li><a href="{{ '/Logické_riadiace_systémy/' | relative_url }}">Logické riadiace systémy</a></li>
-      <li><a href="{{ '/Mechatronics_-_Microprocessors/' | relative_url }}">Mechatronics - Microprocessors</a></li>
-      <li><a href="{{ '/Základy_programovania_-_Programming_Technics/' | relative_url }}">Základy programovania</a></li>
-      <li><a href="{{ '/Projektová_Dokumentácia/' | relative_url }}">Projektová dokumentácia</a></li>
-      <li><a href="{{ '/Digitalizácia_Priemyslu/' | relative_url }}">Digitalizácia Priemyslu</a></li>
-      <li><a href="{{ '/Prostriedky_Priemyselnej_Automatizácie/' | relative_url }}">Prostiedky Priemyselnej Automatizacie</a></li>
-      <li><a href="{{ '/Bezpečnostné_Systémy/' | relative_url }}">Bezpečnostné Systémy</a></li>
-      <li><a href="{{ '/Extra/' | relative_url }}">Extra</a></li>
-    </ul>
-    <div id="resizer"></div>
-  </div>
+    <!-- 🔘 Tlačidlo na zapnutie/vypnutie -->
+    <button id="sidebar-toggle" title="Toggle sidebar">≡</button>
+    {% include sidebar.html %}
   {% endif %}
 
   <!-- 🧱 Hlavný obsah -->
@@ -95,28 +104,38 @@
   </div>
 
   <script>
-    // 🧩 Funkcia na zmenu šírky sidebaru ťahaním
-    const resizer = document.getElementById('resizer');
     const sidebar = document.getElementById('side-panel');
+    const resizer = document.getElementById('resizer');
+    const toggle = document.getElementById('sidebar-toggle');
     let isResizing = false;
 
-    resizer.addEventListener('mousedown', (e) => {
-      isResizing = true;
-      document.body.style.cursor = 'ew-resize';
-    });
+    // 🧩 Toggle otváranie / zatváranie
+    if (toggle && sidebar) {
+      toggle.addEventListener('click', () => {
+        sidebar.classList.toggle('closed');
+      });
+    }
 
-    document.addEventListener('mousemove', (e) => {
-      if (!isResizing) return;
-      const newWidth = e.clientX;
-      if (newWidth > 150 && newWidth < 400) {
-        sidebar.style.width = newWidth + 'px';
-      }
-    });
+    // ✋ Resizing myšou
+    if (resizer && sidebar) {
+      resizer.addEventListener('mousedown', (e) => {
+        isResizing = true;
+        document.body.style.cursor = 'ew-resize';
+      });
 
-    document.addEventListener('mouseup', () => {
-      isResizing = false;
-      document.body.style.cursor = 'default';
-    });
+      document.addEventListener('mousemove', (e) => {
+        if (!isResizing) return;
+        const newWidth = e.clientX;
+        if (newWidth > 150 && newWidth < 400) {
+          sidebar.style.width = newWidth + 'px';
+        }
+      });
+
+      document.addEventListener('mouseup', () => {
+        isResizing = false;
+        document.body.style.cursor = 'default';
+      });
+    }
   </script>
 </body>
 </html>
