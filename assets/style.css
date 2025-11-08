@@ -4,6 +4,9 @@ body {
   margin: 0;
   background: #fafafa;
   color: #222;
+  display: flex;          /* pre sidebar + obsah */
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 /* === SIDEBAR STYLING === */
@@ -13,9 +16,15 @@ body {
   padding: 15px;
   width: 220px;
   height: 100vh;
-  position: fixed;
+  position: fixed;        /* sidebar fixný */
   overflow-y: auto;
   font-family: "Segoe UI", sans-serif;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+#side-panel.hidden {
+  transform: translateX(-100%);
 }
 
 /* Nadpis v sidebare */
@@ -36,7 +45,7 @@ body {
 
 #side-panel li {
   margin: 10px 0;
-  line-height: 1.6em; /* väčšie riadkovanie */
+  line-height: 1.6em;
 }
 
 /* Odkazy */
@@ -55,19 +64,23 @@ body {
   color: #000;
 }
 
-/* Ikony (emoji) majú mierny odsadzovací efekt) */
+/* Ikony (emoji) majú mierny odsadzovací efekt */
 #side-panel li a::before {
   content: "• ";
   color: #888;
 }
 
 /* ===== Obsah ===== */
-main {
+main, #main-content {
   padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+  margin-left: 0; /* predvolené bez sidebaru */
 }
 
-main.with-sidebar {
-  margin-left: 240px;
+/* Ak je sidebar zobrazený, posun obsahu doprava */
+body:not(.no-sidebar) #main-content {
+  margin-left: 240px;  /* šírka sidebaru + padding */
 }
 
 /* ===== Markdown štýly ===== */
