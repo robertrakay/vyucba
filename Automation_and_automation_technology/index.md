@@ -1,31 +1,17 @@
 ---
-title: Automation and Automation Technology
+title: "Automation and Automation Technology"
 layout: subject
-has_children: true
 nav_order: 2
+has_children: true
 show_sidebar: false
 ---
----
 
----
-
-# Automation and automation technology
-
-## 🎯 Course Overview
-Brief description of Automation and automation technology.
-
-## 📚 Structure
-- [Notes](./notes/)
-- [Assignments](./assignments/)
-- [Code Examples](./code_examples/)
-- [Instructions](./instructions/)
-
-
----
 # Automation and Automation Technology
 
 ## 🎯 Course Overview
-Brief description of Automation and automation technology.
+Brief description of **Automation and Automation Technology** — basic principles, industrial applications, and technologies used in automation systems.
+
+---
 
 ## 📚 Structure
 - [Notes](./notes/)
@@ -33,22 +19,19 @@ Brief description of Automation and automation technology.
 - [Code Examples](./code_examples/)
 - [Instructions](./instructions/)
 
+---
+
 ## 🗓️ Semester Plan
 
-| Týždeň | Náplň | Detail |
-|--------|--------|--------|
-| 1 |  |[week1](./vyucba/Automation_and_automation_technology/Weeks/week1/)  |
-| 2 |  |[week2](./vyucba/Automation_and_automation_technology/Weeks/week2/)  |
-| 3 |  |[week3](./vyucba/Automation_and_automation_technology/Weeks/week3/)  |
-| 4 |  |  |
-| 5 |  |  |
-| 6 |  |  |
-| 7 |  |  |
-| 8 |  |  |
-| 9 |  |  |
-| 10 |  |  |
-
-
-
-
-
+| Week | Topic | Details |
+|------|--------|----------|
+| 1 | Introduction to Automation | [Week 1](./Weeks/week1/) |
+| 2 | Sensors and Actuators | [Week 2](./Weeks/week2/) |
+| 3 | PLC Basics | [Week 3](./Weeks/week3/) |
+| 4 | Control Logic |  |
+| 5 | Industrial Networks |  |
+| 6 | HMI and SCADA |  |
+| 7 | Safety Systems |  |
+| 8 | Diagnostics and Maintenance |  |
+| 9 | Case Study |  |
+| 10 | Final Project |  |
