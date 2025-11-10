@@ -64,7 +64,18 @@
 <body {% if page.show_sidebar == false %}class="no-sidebar"{% endif %}>
 
   {% if page.show_sidebar != false %}
+    <!-- BEGIN SIDEBAR -->
     {% include sidebar.html %}
+    
+    <!-- BEGIN POMODORO TIMER INCLUDE -->
+    {% comment %} 
+      Include Pomodoro časovača, viditeľný vždy v sidebaru. 
+      Súbor: _includes/pomodoro.html 
+      Obsahuje spustenie/pozastavenie/reštart časovača. 
+    {% endcomment %}
+    {% include pomodoro.html %}
+    <!-- END POMODORO TIMER INCLUDE -->
+    
   {% endif %}
 
   <div id="main-content">

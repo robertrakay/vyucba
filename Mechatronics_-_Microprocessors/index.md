@@ -1,8 +1,9 @@
 ---
 title: Mechatronics - Microprocessors
-layout: default
+layout: subject
 has_children: true
 nav_order: 2
+show_sidebar: false
 ---
 
 # Mechatronics - Microprocessors
@@ -16,22 +17,26 @@ Brief description of Mechatronics - Microprocessors.
 - [Code Examples](./code_examples/)
 - [Instructions](./instructions/)
 
+---
 
-<h3>Semester Plan</h3>
-<table border='1' style='border-collapse:collapse;width:100%;text-align:left;'>
-<thead><tr><th>Week</th><th>Link</th></tr></thead>
-<tbody>
-<tr><td>1</td><td><a href='/vyucba/Mechatronics_-_Microprocessors/Weeks/week1/'>Week 1</a></td></tr>
-<tr><td>2</td><td><a href='/vyucba/Mechatronics_-_Microprocessors/Weeks/week2/'>Week 2</a></td></tr>
-<tr><td>3</td><td><a href='/vyucba/Mechatronics_-_Microprocessors/Weeks/week3/'>Week 3</a></td></tr>
-<tr><td>4</td><td><a href='/vyucba/Mechatronics_-_Microprocessors/Weeks/week4/'>Week 4</a></td></tr>
-<tr><td>5</td><td><a href='/vyucba/Mechatronics_-_Microprocessors/Weeks/week5/'>Week 5</a></td></tr>
-<tr><td>6</td><td><a href='/vyucba/Mechatronics_-_Microprocessors/Weeks/week6/'>Week 6</a></td></tr>
-<tr><td>7</td><td><a href='/vyucba/Mechatronics_-_Microprocessors/Weeks/week7/'>Week 7</a></td></tr>
-<tr><td>8</td><td><a href='/vyucba/Mechatronics_-_Microprocessors/Weeks/week8/'>Week 8</a></td></tr>
-<tr><td>9</td><td><a href='/vyucba/Mechatronics_-_Microprocessors/Weeks/week9/'>Week 9</a></td></tr>
-<tr><td>10</td><td><a href='/vyucba/Mechatronics_-_Microprocessors/Weeks/week10/'>Week 10</a></td></tr>
-<tr><td>11</td><td><a href='/vyucba/Mechatronics_-_Microprocessors/Weeks/week11/'>Week 11</a></td></tr>
-<tr><td>12</td><td><a href='/vyucba/Mechatronics_-_Microprocessors/Weeks/week12/'>Week 12</a></td></tr>
-<tr><td>13</td><td><a href='/vyucba/Mechatronics_-_Microprocessors/Weeks/week13/'>Week 13</a></td></tr>
-</tbody></table>
+## 📅 Semester Plan / Weekly Overview
+
+| Week | Topic | Detail | Link |
+|------|-------|--------|------|
+| 1  | ... | ... | [Week 1](/vyucba/Mechatronics_-_Microprocessors/Weeks/week1/) |
+| 2  | ... | ... | [Week 2](/vyucba/Mechatronics_-_Microprocessors/Weeks/week2/) |
+| 3  | ... | ... | [Week 3](/vyucba/Mechatronics_-_Microprocessors/Weeks/week3/) |
+| 4  | ... | ... | [Week 4](/vyucba/Mechatronics_-_Microprocessors/Weeks/week4/) |
+| 5  | ... | ... | [Week 5](/vyucba/Mechatronics_-_Microprocessors/Weeks/week5/) |
+| 6  | ... | ... | [Week 6](/vyucba/Mechatronics_-_Microprocessors/Weeks/week6/) |
+| 7  | ... | ... | [Week 7](/vyucba/Mechatronics_-_Microprocessors/Weeks/week7/) |
+| 8  | ... | ... | [Week 8](/vyucba/Mechatronics_-_Microprocessors/Weeks/week8/) |
+| 9  | ... | ... | [Week 9](/vyucba/Mechatronics_-_Microprocessors/Weeks/week9/) |
+| 10 | ... | ... | [Week 10](/vyucba/Mechatronics_-_Microprocessors/Weeks/week10/) |
+| 11 | ... | ... | [Week 11](/vyucba/Mechatronics_-_Microprocessors/Weeks/week11/) |
+| 12 | ... | ... | [Week 12](/vyucba/Mechatronics_-_Microprocessors/Weeks/week12/) |
+| 13 | ... | ... | [Week 13](/vyucba/Mechatronics_-_Microprocessors/Weeks/week13/) |
+
+---
+
+*Posledná aktualizácia:* {{ site.time | date: "%d.%m.%Y" }}

@@ -1,0 +1,114 @@
+<div id="pomodoro-container" style="border:1px solid #ccc; padding:15px; max-width:350px; font-family:sans-serif;">
+  <h4>⏱ Pomodoro Timer</h4>
+  <div style="margin-bottom:10px;">
+    <label>Pomodoro (min): <input id="pomodoro-length" type="number" value="25" min="1" style="width:50px;"></label>
+    <label>Prestávka (min): <input id="break-length" type="number" value="5" min="1" style="width:50px;"></label>
+  </div>
+  <div id="timer-display" style="font-size:2em; text-align:center;">25:00</div>
+  <div style="margin-top:10px; text-align:center;">
+    <button id="start-btn">Štart</button>
+    <button id="pause-btn">Pauza</button>
+    <button id="reset-btn">Reset</button>
+  </div>
+  <div style="margin-top:10px; text-align:center;">
+    Cycles completed: <span id="cycle-count">0</span>
+  </div>
+</div>
+
+<audio id="alarm-sound">
+  <source src="https://www.soundjay.com/buttons/sounds/beep-07.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+(function() {
+  const display = document.getElementById('timer-display');
+  const startBtn = document.getElementById('start-btn');
+  const pauseBtn = document.getElementById('pause-btn');
+  const resetBtn = document.getElementById('reset-btn');
+  const pomodoroInput = document.getElementById('pomodoro-length');
+  const breakInput = document.getElementById('break-length');
+  const cycleDisplay = document.getElementById('cycle-count');
+  const alarm = document.getElementById('alarm-sound');
+
+  let pomodoroLength = parseInt(pomodoroInput.value);
+  let breakLength = parseInt(breakInput.value);
+  let time = pomodoroLength * 60;
+  let running = false;
+  let onBreak = false;
+  let cycles = parseInt(localStorage.getItem('pomodoroCycles') || 0);
+  cycleDisplay.textContent = cycles;
+
+  let interval;
+
+  function updateDisplay() {
+    let minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+    display.textContent = `${minutes.toString().padStart(2,'0')}:${seconds.toString().padStart(2,'0')}`;
+  }
+
+  function tick() {
+    if (time > 0) {
+      time--;
+      updateDisplay();
+    } else {
+      alarm.play();
+      if (!onBreak) {
+        // Pomodoro finished, start break
+        onBreak = true;
+        time = breakLength * 60;
+        display.style.color = 'green';
+      } else {
+        // Break finished
+        onBreak = false;
+        cycles++;
+        localStorage.setItem('pomodoroCycles', cycles);
+        cycleDisplay.textContent = cycles;
+        time = pomodoroLength * 60;
+        display.style.color = 'black';
+      }
+      updateDisplay();
+    }
+  }
+
+  startBtn.addEventListener('click', function() {
+    if (!running) {
+      running = true;
+      interval = setInterval(tick, 1000);
+    }
+  });
+
+  pauseBtn.addEventListener('click', function() {
+    clearInterval(interval);
+    running = false;
+  });
+
+  resetBtn.addEventListener('click', function() {
+    clearInterval(interval);
+    running = false;
+    onBreak = false;
+    pomodoroLength = parseInt(pomodoroInput.value);
+    breakLength = parseInt(breakInput.value);
+    time = pomodoroLength * 60;
+    updateDisplay();
+    display.style.color = 'black';
+  });
+
+  // Update times if input changes
+  pomodoroInput.addEventListener('change', function() {
+    if (!running && !onBreak) {
+      pomodoroLength = parseInt(this.value);
+      time = pomodoroLength * 60;
+      updateDisplay();
+    }
+  });
+  breakInput.addEventListener('change', function() {
+    if (!running && onBreak) {
+      breakLength = parseInt(this.value);
+      time = breakLength * 60;
+      updateDisplay();
+    }
+  });
+
+  updateDisplay();
+})();
+</script>
