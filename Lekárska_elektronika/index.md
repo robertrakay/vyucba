@@ -59,9 +59,6 @@ Absolvovaním predmetu študent získa prehľad o TBD.
 - [Try Jupyter Online](https://jupyter.org/try-jupyter)  
 - [CircuitJS Online](https://www.falstad.com/circuit/)
 
-*Posledná aktualizácia:* {{ site.time | date: "%d.%m.%Y" }}
-
----
 
 ## 🎯 Course Overview
 Brief description of Lekárska elektronika.
@@ -71,3 +68,6 @@ Brief description of Lekárska elektronika.
 - [Assignments](./assignments/)
 - [Code Examples](./code_examples/)
 - [Instructions](./instructions/)
+---
+
+*Posledná aktualizácia:* {{ site.time | date: "%d.%m.%Y" }}

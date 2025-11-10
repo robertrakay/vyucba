@@ -1,121 +1,41 @@
 ---
-layout: default
+layout: subject
 title: Prostriedky priemyselnej automatizácie
+has_children: true
+nav_order: 2
 show_sidebar: false
 ---
+
 # {{ page.title }}
 
----
-
-## 🧭 Prehľad / Course Overview
+## 🧭 Course Overview
 Krátky popis predmetu.  
 Študent získa základné poznatky o SCADA systémoch a ich komponentoch, vrátane riadiacich jednotiek, HMI a databáz. Študent získa vedomosti o priemyselnej komunikácii a štandardoch OPC a OPC UA, vrátane konfigurácie klient/server aplikácií. Študent získa skúsenosti s využitím webových technológií a embedded webserverov pre moderné HMI riešenia. Študent získa praktické zručnosti v implementácii SCADA projektov s dôrazom na datalogging, historizáciu a kybernetickú bezpečnosť. Študent získa schopnosť prezentovať vlastné riešenia a porovnávať dostupný SCADA softvér.
 
 **Ciele predmetu:**
-- Cieľ 1 – napr. pochopiť princípy riadenia systémov  
-- Cieľ 2 – naučiť sa používať základné softvérové nástroje  
-- Cieľ 3 – rozvíjať praktické zručnosti v laboratórnych cvičeniach  
+- Pochopiť princípy riadenia systémov  
+- Naučiť sa používať základné softvérové nástroje  
+- Rozvíjať praktické zručnosti v laboratórnych cvičeniach  
 
 ---
 
-## 📅 Týždenný prehľad / Weekly Overview
+## 📅 Semester Plan / Weekly Overview
 
-<style>
-table {
-  border-collapse: collapse;
-  width: auto;              /* namiesto 100% – prispôsobí sa obsahu */
-  margin: 1em auto;         /* vycentruje tabuľku */
-  table-layout: auto;       /* umožní dynamické prispôsobenie stĺpcov */
-  max-width: 100%;          /* aby sa nezlomila mimo obrazovku */
-}
-th, td {
-  border: 1px solid #444;
-  padding: 8px 12px;
-  vertical-align: top;
-  white-space: nowrap;      /* zabráni zalamovaniu textu v úzkych bunkách */
-}
-td:nth-child(3) {
-  white-space: normal;      /* posledný stĺpec (Detail) môže zalamovať text */
-  min-width: 250px;         /* aby mal dostatočnú šírku na odrážky */
-}
-th {
-  background-color: #f2f2f2;
-  text-align: center;
-}
-</style>
-
-<table>
-  <tr>
-    <th>Týždeň</th>
-    <th>Náplň</th>
-    <th>Detail</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>1. Úvod do SCADA systémov</td>
-    <td>- Základné normy a štandardy</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>2. Základné komponenty SCADA</td>
-    <td>- Zakladanie a štruktúrovanie projektu</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>3. Priemyselná komunikácia</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>4. OPC technológia – Úvod</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>5. OPC UA – podrobne</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td>6. OPC UA klient/server</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>7. Webové technológie v automatizácii</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>8</td>
-    <td>8. Embedded webserver a HMI</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>9</td>
-    <td>9. SCADA softvér – prehľad a porovnanie</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td>10. Projekt – Návrh a implementácia SCADA systému</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>11</td>
-    <td>11. Datalogging a historizácia</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>12</td>
-    <td>12. Kybernetická bezpečnosť v SCADA a OPC UA</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>13</td>
-    <td>13. Prezentácie študentských projektov</td>
-    <td></td>
-  </tr>
-</table>
+| Week | Topic | Detail | Link |
+|------|-------|--------|------|
+| 1 | Úvod do SCADA systémov | Základné normy a štandardy | [Week 1](/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week1/) |
+| 2 | Základné komponenty SCADA | Zakladanie a štruktúrovanie projektu | [Week 2](/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week2/) |
+| 3 | Priemyselná komunikácia |  | [Week 3](/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week3/) |
+| 4 | OPC technológia – Úvod |  | [Week 4](/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week4/) |
+| 5 | OPC UA – podrobne |  | [Week 5](/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week5/) |
+| 6 | OPC UA klient/server |  | [Week 6](/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week6/) |
+| 7 | Webové technológie v automatizácii |  | [Week 7](/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week7/) |
+| 8 | Embedded webserver a HMI |  | [Week 8](/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week8/) |
+| 9 | SCADA softvér – prehľad a porovnanie |  | [Week 9](/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week9/) |
+| 10 | Projekt – Návrh a implementácia SCADA systému |  | [Week 10](/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week10/) |
+| 11 | Datalogging a historizácia |  | [Week 11](/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week11/) |
+| 12 | Kybernetická bezpečnosť v SCADA a OPC UA |  | [Week 12](/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week12/) |
+| 13 | Prezentácie študentských projektov |  | [Week 13](/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week13/) |
 
 > 🗒️ *Poznámka:* Doplň podľa harmonogramu semestra, napr. témy cvičení, projektov alebo skúšok.
 
@@ -124,53 +44,29 @@ th {
 ## 🧩 Doplnky / Addons
 
 ### 💻 Code Examples
-Odkazy alebo ukážky zdrojových kódov:  
 - [Ukážka 1 – Blikanie LED (Arduino)](Code_examples/example1.md)  
 - [Ukážka 2 – Čítanie senzora](Code_examples/example2.md)
 
----
-
 ### 🌐 Interesting Links
-Užitočné odkazy k predmetu:  
 - [Oficiálna dokumentácia Pythonu](https://docs.python.org/)  
 - [Simulátor Wokwi](https://wokwi.com)  
 - [Falstad obvody](https://falstad.com/circuit/)
 
----
-
 ### 🧾 Assignments
-Zadania pre študentov:  
 - [Assignment 1](Assignments/assignment1.md)  
 - [Assignment 2](Assignments/assignment2.md)
 
----
-
 ### ⚙️ Simulator
-Interaktívne simulátory:  
 - 🔗 [Open in Wokwi Simulator](https://wokwi.com)  
 - 🔗 [Try Jupyter Online](https://jupyter.org/try-jupyter)  
 - 🔗 [CircuitJS Online](https://www.falstad.com/circuit/)
 
 ---
 
+## 📚 Structure
+- [Notes](./notes/)
+- [Assignments](./assignments/)
+- [Code Examples](./code_examples/)
+- [Instructions](./instructions/)
+
 *Posledná aktualizácia:* {{ site.time | date: "%d.%m.%Y" }}
-
-
-<h3>Semester Plan</h3>
-<table border='1' style='border-collapse:collapse;width:100%;text-align:left;'>
-<thead><tr><th>Week</th><th>Link</th></tr></thead>
-<tbody>
-<tr><td>1</td><td><a href='/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week1/'>Week 1</a></td></tr>
-<tr><td>2</td><td><a href='/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week2/'>Week 2</a></td></tr>
-<tr><td>3</td><td><a href='/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week3/'>Week 3</a></td></tr>
-<tr><td>4</td><td><a href='/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week4/'>Week 4</a></td></tr>
-<tr><td>5</td><td><a href='/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week5/'>Week 5</a></td></tr>
-<tr><td>6</td><td><a href='/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week6/'>Week 6</a></td></tr>
-<tr><td>7</td><td><a href='/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week7/'>Week 7</a></td></tr>
-<tr><td>8</td><td><a href='/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week8/'>Week 8</a></td></tr>
-<tr><td>9</td><td><a href='/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week9/'>Week 9</a></td></tr>
-<tr><td>10</td><td><a href='/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week10/'>Week 10</a></td></tr>
-<tr><td>11</td><td><a href='/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week11/'>Week 11</a></td></tr>
-<tr><td>12</td><td><a href='/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week12/'>Week 12</a></td></tr>
-<tr><td>13</td><td><a href='/vyucba/Prostriedky_Priemyselnej_Automatizácie/Weeks/week13/'>Week 13</a></td></tr>
-</tbody></table>

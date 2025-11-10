@@ -1,122 +1,41 @@
 ---
-layout: default
+layout: subject
 title: Digitalizácia priemyslu
+has_children: true
+nav_order: 2
 show_sidebar: false
 ---
+
 # {{ page.title }}
 
----
-
-## 🧭 Prehľad / Course Overview
+## 🧭 Course Overview
 Krátky popis predmetu.  
-Absolvovaním predmetu študent získa prehľad o moderných nástrojoch digitalizácie priemyslu a ich využití v praxi. Oboznámi sa s konceptami IoT, inteligentných senzorov a prepojenia výrobných procesov prostredníctvom mikrokontrolérov a komunikačných štandardov. Získa skúsenosti s tvorbou jednoduchých aplikácií v prostredí Node-RED a prepojením systémov cez IO-Link. Dokáže analyzovať dáta pomocou Matlabu a využiť ich pre optimalizáciu riadiacich procesov. Výsledkom je schopnosť navrhovať a implementovať základné riešenia digitalizácie v priemyselnom prostredí
+Absolvovaním predmetu študent získa prehľad o moderných nástrojoch digitalizácie priemyslu a ich využití v praxi. Oboznámi sa s konceptami IoT, inteligentných senzorov a prepojenia výrobných procesov prostredníctvom mikrokontrolérov a komunikačných štandardov. Získa skúsenosti s tvorbou jednoduchých aplikácií v prostredí Node-RED a prepojením systémov cez IO-Link. Dokáže analyzovať dáta pomocou Matlabu a využiť ich pre optimalizáciu riadiacich procesov. Výsledkom je schopnosť navrhovať a implementovať základné riešenia digitalizácie v priemyselnom prostredí.
 
 **Ciele predmetu:**
-- Cieľ 1 – napr. pochopiť princípy riadenia systémov  
-- Cieľ 2 – naučiť sa používať základné softvérové nástroje  
-- Cieľ 3 – rozvíjať praktické zručnosti v laboratórnych cvičeniach  
+- Pochopiť princípy riadenia systémov  
+- Naučiť sa používať základné softvérové nástroje  
+- Rozvíjať praktické zručnosti v laboratórnych cvičeniach  
 
 ---
 
-## 📅 Týždenný prehľad / Weekly Overview
+## 📅 Semester Plan / Weekly Overview
 
-<style>
-table {
-  border-collapse: collapse;
-  width: auto;              /* namiesto 100% – prispôsobí sa obsahu */
-  margin: 1em auto;         /* vycentruje tabuľku */
-  table-layout: auto;       /* umožní dynamické prispôsobenie stĺpcov */
-  max-width: 100%;          /* aby sa nezlomila mimo obrazovku */
-}
-th, td {
-  border: 1px solid #444;
-  padding: 8px 12px;
-  vertical-align: top;
-  white-space: nowrap;      /* zabráni zalamovaniu textu v úzkych bunkách */
-}
-td:nth-child(3) {
-  white-space: normal;      /* posledný stĺpec (Detail) môže zalamovať text */
-  min-width: 250px;         /* aby mal dostatočnú šírku na odrážky */
-}
-th {
-  background-color: #f2f2f2;
-  text-align: center;
-}
-</style>
-
-
-<table>
-  <tr>
-    <th>Týždeň</th>
-    <th>Náplň</th>
-    <th>Detail</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>1.	Úvod do digitalizácie a Industry 4.0</td>
-    <td>- Základné normy a štandardy</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>2.	Základy priemyselnej komunikácie</td>
-    <td>- Zakladanie a štruktúrovanie projektu</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Mikrokontroléry v digitalizácii priemyslu</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>Platforma IO-Link</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>Prepojenie IO-Link a PLC/MCU</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td>Node-RED ako nástroj pre IIoT</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>Node-RED a vizualizácia dát</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td>8</td>
-    <td>Matlab a digitálne spracovanie dát</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td>9</td>
-    <td>Matlab a Machine Learning v priemysle</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td>Digitálne dvojča a simulácie</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td>11</td>
-    <td>Kybernetická bezpečnosť v digitalizácii</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td>12</td>
-    <td>Projekt – Integrovaný systém</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td>13</td>
-    <td>Prezentácie projektov študentov</td>
-    <td> </td>
-  </tr>
-</table>
+| Week | Topic | Detail | Link |
+|------|-------|--------|------|
+| 1 | Úvod do digitalizácie a Industry 4.0 | Základné normy a štandardy | [Week 1](/vyucba/Digitalizácia_Priemyslu/Weeks/week1/) |
+| 2 | Základy priemyselnej komunikácie | Zakladanie a štruktúrovanie projektu | [Week 2](/vyucba/Digitalizácia_Priemyslu/Weeks/week2/) |
+| 3 | Mikrokontroléry v digitalizácii priemyslu |  | [Week 3](/vyucba/Digitalizácia_Priemyslu/Weeks/week3/) |
+| 4 | Platforma IO-Link |  | [Week 4](/vyucba/Digitalizácia_Priemyslu/Weeks/week4/) |
+| 5 | Prepojenie IO-Link a PLC/MCU |  | [Week 5](/vyucba/Digitalizácia_Priemyslu/Weeks/week5/) |
+| 6 | Node-RED ako nástroj pre IIoT |  | [Week 6](/vyucba/Digitalizácia_Priemyslu/Weeks/week6/) |
+| 7 | Node-RED a vizualizácia dát |  | [Week 7](/vyucba/Digitalizácia_Priemyslu/Weeks/week7/) |
+| 8 | Matlab a digitálne spracovanie dát |  | [Week 8](/vyucba/Digitalizácia_Priemyslu/Weeks/week8/) |
+| 9 | Matlab a Machine Learning v priemysle |  | [Week 9](/vyucba/Digitalizácia_Priemyslu/Weeks/week9/) |
+| 10 | Digitálne dvojča a simulácie |  | [Week 10](/vyucba/Digitalizácia_Priemyslu/Weeks/week10/) |
+| 11 | Kybernetická bezpečnosť v digitalizácii |  | [Week 11](/vyucba/Digitalizácia_Priemyslu/Weeks/week11/) |
+| 12 | Projekt – Integrovaný systém |  | [Week 12](/vyucba/Digitalizácia_Priemyslu/Weeks/week12/) |
+| 13 | Prezentácie projektov študentov |  | [Week 13](/vyucba/Digitalizácia_Priemyslu/Weeks/week13/) |
 
 > 🗒️ *Poznámka:* Doplň podľa harmonogramu semestra, napr. témy cvičení, projektov alebo skúšok.
 
@@ -125,59 +44,29 @@ th {
 ## 🧩 Doplnky / Addons
 
 ### 💻 Code Examples
-Odkazy alebo ukážky zdrojových kódov:  
 - [Ukážka 1 – Blikanie LED (Arduino)](Code_examples/example1.md)  
 - [Ukážka 2 – Čítanie senzora](Code_examples/example2.md)
 
----
-
 ### 🌐 Interesting Links
-Užitočné odkazy k predmetu:  
 - [Oficiálna dokumentácia Pythonu](https://docs.python.org/)  
 - [Simulátor Wokwi](https://wokwi.com)  
 - [Falstad obvody](https://falstad.com/circuit/)
 
----
-
 ### 🧾 Assignments
-Zadania pre študentov:  
 - [Assignment 1](Assignments/assignment1.md)  
 - [Assignment 2](Assignments/assignment2.md)
 
----
-
 ### ⚙️ Simulator
-Interaktívne simulátory:  
 - 🔗 [Open in Wokwi Simulator](https://wokwi.com)  
 - 🔗 [Try Jupyter Online](https://jupyter.org/try-jupyter)  
 - 🔗 [CircuitJS Online](https://www.falstad.com/circuit/)
 
 ---
+
 ## 📚 Structure
 - [Notes](./notes/)
 - [Assignments](./assignments/)
 - [Code Examples](./code_examples/)
 - [Instructions](./instructions/)
 
-
 *Posledná aktualizácia:* {{ site.time | date: "%d.%m.%Y" }}
-
-
-<h3>Semester Plan</h3>
-<table border='1' style='border-collapse:collapse;width:100%;text-align:left;'>
-<thead><tr><th>Week</th><th>Link</th></tr></thead>
-<tbody>
-<tr><td>1</td><td><a href='/vyucba/Digitalizácia_Priemyslu/Weeks/week1/'>Week 1</a></td></tr>
-<tr><td>2</td><td><a href='/vyucba/Digitalizácia_Priemyslu/Weeks/week2/'>Week 2</a></td></tr>
-<tr><td>3</td><td><a href='/vyucba/Digitalizácia_Priemyslu/Weeks/week3/'>Week 3</a></td></tr>
-<tr><td>4</td><td><a href='/vyucba/Digitalizácia_Priemyslu/Weeks/week4/'>Week 4</a></td></tr>
-<tr><td>5</td><td><a href='/vyucba/Digitalizácia_Priemyslu/Weeks/week5/'>Week 5</a></td></tr>
-<tr><td>6</td><td><a href='/vyucba/Digitalizácia_Priemyslu/Weeks/week6/'>Week 6</a></td></tr>
-<tr><td>7</td><td><a href='/vyucba/Digitalizácia_Priemyslu/Weeks/week7/'>Week 7</a></td></tr>
-<tr><td>8</td><td><a href='/vyucba/Digitalizácia_Priemyslu/Weeks/week8/'>Week 8</a></td></tr>
-<tr><td>9</td><td><a href='/vyucba/Digitalizácia_Priemyslu/Weeks/week9/'>Week 9</a></td></tr>
-<tr><td>10</td><td><a href='/vyucba/Digitalizácia_Priemyslu/Weeks/week10/'>Week 10</a></td></tr>
-<tr><td>11</td><td><a href='/vyucba/Digitalizácia_Priemyslu/Weeks/week11/'>Week 11</a></td></tr>
-<tr><td>12</td><td><a href='/vyucba/Digitalizácia_Priemyslu/Weeks/week12/'>Week 12</a></td></tr>
-<tr><td>13</td><td><a href='/vyucba/Digitalizácia_Priemyslu/Weeks/week13/'>Week 13</a></td></tr>
-</tbody></table>
