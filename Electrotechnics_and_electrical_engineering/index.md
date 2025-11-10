@@ -1,6 +1,6 @@
 ---
 title: Electrotechnics and Electrical Engineering
-layout: subject
+layout: custom_default
 has_children: true
 nav_order: 2
 show_sidebar: false
@@ -85,3 +85,4 @@ Interaktívne simulátory:
 
 
 *Last updated:* {{ site.time | date: "%d.%m.%Y" }}
+
