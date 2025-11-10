@@ -23,15 +23,16 @@ Brief description of **Automation and Automation Technology** — basic principl
 
 ## 🗓️ Semester Plan
 
-| Week | Topic | Details |
-|------|--------|----------|
-| 1 | Introduction to Automation | [Week 1](./Weeks/week1/) |
-| 2 | Sensors and Actuators | [Week 2](./Weeks/week2/) |
-| 3 | PLC Basics | [Week 3](./Weeks/week3/) |
-| 4 | Control Logic |  |
-| 5 | Industrial Networks |  |
-| 6 | HMI and SCADA |  |
-| 7 | Safety Systems |  |
-| 8 | Diagnostics and Maintenance |  |
-| 9 | Case Study |  |
-| 10 | Final Project |  |
+| Week | Topic | Details | Weeks |
+|------|--------|----------|----------|
+| 1 | Introduction to Automation || [Week 1](./Weeks/week1/) |
+| 2 | Sensors and Actuators || [Week 2](./Weeks/week2/) |
+| 3 | PLC Basics || [Week 3](./Weeks/week3/) |
+| 4 | Control Logic ||  |
+| 5 | Industrial Networks ||  |
+| 6 | HMI and SCADA ||  |
+| 7 | Safety Systems ||  |
+| 8 | Diagnostics and Maintenance ||  |
+| 9 | Case Study ||  |
+| 10 | Final Project ||  |
+
