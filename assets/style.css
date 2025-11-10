@@ -6,7 +6,7 @@ body {
   color: #222;
   display: flex;          /* pre sidebar + obsah */
   min-height: 100vh;
-  overflow: hidden;
+  overflow: auto;
 }
 
 /* === SIDEBAR STYLING === */
