@@ -1,12 +1,17 @@
 /* ===== Základné nastavenia ===== */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Segoe UI", Roboto, sans-serif;
-  margin: 0;
   background: #fafafa;
   color: #222;
-  display: flex;          /* pre sidebar + obsah */
-  min-height: 100vh;
-  overflow: auto;
+  display: block;          /* ❗ odstránené flex, inak sa obsah skracuje */
+  overflow-x: hidden;      /* nech nepreteká vodorovne */
+  overflow-y: auto;        /* umožní vertikálne scrollovanie */
 }
 
 /* === SIDEBAR STYLING === */
@@ -16,71 +21,30 @@ body {
   padding: 15px;
   width: 220px;
   height: 100vh;
-  position: fixed;        /* sidebar fixný */
+  position: fixed;
+  top: 0;
+  left: 0;
   overflow-y: auto;
   font-family: "Segoe UI", sans-serif;
   transition: transform 0.3s ease;
-  flex-shrink: 0;
+  z-index: 1000;
 }
 
 #side-panel.hidden {
   transform: translateX(-100%);
 }
 
-/* Nadpis v sidebare */
-#side-panel h3 {
-  margin-top: 0;
-  font-size: 1.2em;
-  color: #333;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 5px;
-}
-
-/* Zoznam predmetov */
-#side-panel ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-#side-panel li {
-  margin: 10px 0;
-  line-height: 1.6em;
-}
-
-/* Odkazy */
-#side-panel a {
-  text-decoration: none;
-  color: #0056b3;
-  display: block;
-  padding: 5px 8px;
-  border-radius: 6px;
-  transition: background 0.2s ease, color 0.2s ease;
-}
-
-/* Hover efekt */
-#side-panel a:hover {
-  background: #e6f0ff;
-  color: #000;
-}
-
-/* Ikony (emoji) majú mierny odsadzovací efekt */
-#side-panel li a::before {
-  content: "• ";
-  color: #888;
-}
-
 /* ===== Obsah ===== */
 main, #main-content {
   padding: 20px;
-  flex: 1;
-  overflow-y: auto;
-  margin-left: 0; /* predvolené bez sidebaru */
+  margin-left: 240px;  /* posun kvôli sidebaru */
+  box-sizing: border-box;
+  overflow: visible;
 }
 
-/* Ak je sidebar zobrazený, posun obsahu doprava */
-body:not(.no-sidebar) #main-content {
-  margin-left: 240px;  /* šírka sidebaru + padding */
+/* Ak je sidebar vypnutý */
+body.no-sidebar #main-content {
+  margin-left: 0;
 }
 
 /* ===== Markdown štýly ===== */
