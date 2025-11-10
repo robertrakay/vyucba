@@ -1,5 +1,5 @@
 ---
-layout: subject
+layout: custom_default
 title: Prostriedky priemyselnej automatizácie
 has_children: true
 nav_order: 2
