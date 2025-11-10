@@ -13,7 +13,8 @@ layout: null
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 
-<body class="{% if page.show_sidebar == false %}no-sidebar{% endif %}">
+<body {% if page.show_sidebar == false %}class="no-sidebar"{% endif %}>
+
   <div class="page-wrapper">
 
     {% if page.show_sidebar != false %}
