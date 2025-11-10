@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: custom_default
 title: Názov predmetu / Name of the Subject
 show_sidebar: true
 ---
@@ -20,21 +20,21 @@ Sem napíš, o čom predmet je, čo sa študent naučí a aké sú jeho ciele.
 
 ## 📅 Týždenný prehľad / Weekly Overview
 
-| Týždeň | Náplň | Detail |
-|:------:|:------|:--------|
-| 1 | Úvod do predmetu | Zoznámenie s cieľmi a osnovou |
-| 2 |  |  |
-| 3 |  |  |
-| 4 |  |  |
-| 5 |  |  |
-| 6 |  |  |
-| 7 |  |  |
-| 8 |  |  |
-| 9 |  |  |
-| 10 |  |  |
-| 11 |  |  |
-| 12 |  |  |
-| 13 |  |  |
+| Týždeň | Náplň | Detail | Link |
+|:------:|:------|:--------|:--------|
+| 1 | Úvod do predmetu | Zoznámenie s cieľmi a osnovou | |
+| 2 |  |  | |
+| 3 |  |  | |
+| 4 |  |  | |
+| 5 |  |  | |
+| 6 |  |  | |
+| 7 |  |  | |
+| 8 |  |  | |
+| 9 |  |  | |
+| 10 |  |  | |
+| 11 |  |  | |
+| 12 |  |  | |
+| 13 |  |  | |
 
 > 🗒️ *Poznámka:* Doplň podľa harmonogramu semestra, napr. témy cvičení, projektov alebo skúšok.
 
