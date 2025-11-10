@@ -1,8 +1,9 @@
 ---
 title: Logické riadiace systémy
-layout: default
+layout: subject
 has_children: true
 nav_order: 2
+show_sidebar: false
 ---
 
 # Logické riadiace systémy
@@ -34,4 +35,5 @@ Brief description of Logické riadiace systémy.
 <tr><td>11</td><td><a href='/vyucba/Logické_riadiace_systémy/Weeks/week11/'>Week 11</a></td></tr>
 <tr><td>12</td><td><a href='/vyucba/Logické_riadiace_systémy/Weeks/week12/'>Week 12</a></td></tr>
 <tr><td>13</td><td><a href='/vyucba/Logické_riadiace_systémy/Weeks/week13/'>Week 13</a></td></tr>
+
 </tbody></table>
