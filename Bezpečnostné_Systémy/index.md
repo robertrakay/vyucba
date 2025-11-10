@@ -3,7 +3,8 @@ layout: custom_default
 title: Bezpečnostné Systémy
 show_sidebar: false
 ---
-# {{ page.title }}
+
+# Bezpečnostné Systémy
 
 ---
 
@@ -12,112 +13,32 @@ Krátky popis predmetu.
 Absolvovaním predmetu študent získa prehľad o priemyselných riadiacich systémoch, rôznych typoch regulátorov a základné poznatky z oblasti robotiky. Oboznámi sa aj s elektropneumatickými systémami a priemyselnými senzorovými systémami, ktoré si bude môcť prakticky overiť na experimentálnych stendoch v laboratóriu. Zároveň nadobudne vedomosti z navrhovania a realizácie logických obvodov, ktoré dokáže najskôr nasimulovať a následne zrealizovať pomocou elektrických a pneumatických komponentov.
 
 **Ciele predmetu:**
-- Cieľ 1 – napr. pochopiť princípy riadenia systémov  
-- Cieľ 2 – naučiť sa používať základné softvérové nástroje  
-- Cieľ 3 – rozvíjať praktické zručnosti v laboratórnych cvičeniach  
+- Pochopiť princípy riadenia systémov  
+- Naučiť sa používať základné softvérové nástroje  
+- Rozvíjať praktické zručnosti v laboratórnych cvičeniach  
 
 ---
 
 ## 📅 Týždenný prehľad / Weekly Overview
 
-<style>
-table {
-  border-collapse: collapse;
-  width: auto;              /* namiesto 100% – prispôsobí sa obsahu */
-  margin: 1em auto;         /* vycentruje tabuľku */
-  table-layout: auto;       /* umožní dynamické prispôsobenie stĺpcov */
-  max-width: 100%;          /* aby sa nezlomila mimo obrazovku */
-}
-th, td {
-  border: 1px solid #444;
-  padding: 8px 12px;
-  vertical-align: top;
-  white-space: nowrap;      /* zabráni zalamovaniu textu v úzkych bunkách */
-}
-td:nth-child(3) {
-  white-space: normal;      /* posledný stĺpec (Detail) môže zalamovať text */
-  min-width: 250px;         /* aby mal dostatočnú šírku na odrážky */
-}
-th {
-  background-color: #f2f2f2;
-  text-align: center;
-}
-</style>
+| **Týždeň** | **Náplň** | **Detail** | **Link** |
+|-------------|------------|-------------|-----------|
+| 1 | Úvod do funkčnej bezpečnosti v priemysle | Základné normy (IEC 61508, ISO 13849) | [Week 1](/vyucba/Bezpečnostné_Systémy/Weeks/week1/) |
+| 2 | Bezpečnostné funkcie a Safety Life Cycle | Proces návrhu a implementácie bezpečnostných funkcií | [Week 2](/vyucba/Bezpečnostné_Systémy/Weeks/week2/) |
+| 3 | SIL – Safety Integrity Level | Kategorizácia a výpočet úrovní spoľahlivosti |[Week 3](/vyucba/Bezpečnostné_Systémy/Weeks/week3/) |
+| 4 | PL – Performance Level | Hodnotenie podľa ISO 13849-1 |[Week 4](/vyucba/Bezpečnostné_Systémy/Weeks/week4/) |
+| 5 | Bezpečnostné senzory – typy a aplikácie | Optické, indukčné, mechanické, RFID senzory |[Week 5](/vyucba/Bezpečnostné_Systémy/Weeks/week5/) |
+| 6 | Bezpečnostné aktuátory a výstupné prvky | Relé, ventily, pohony, stýkače so spätnou väzbou | [Week 6](/vyucba/Bezpečnostné_Systémy/Weeks/week6/) |
+| 7 | Safety PLC – architektúra a princíp činnosti | Redundantné procesory, diagnostika, bezpečnostné I/O |[Week 7](/vyucba/Bezpečnostné_Systémy/Weeks/week7/) |
+| 8 | Programovanie bezpečnostných funkcií | Certifikované bloky, testovanie, validácia logiky |[Week 8](/vyucba/Bezpečnostné_Systémy/Weeks/week8/) |
+| 9 | Diagnostika, testovanie a údržba bezpečnostných systémov | Periodické testy, logovanie chýb, údržba podľa IEC 61511 |[Week 9](/vyucba/Bezpečnostné_Systémy/Weeks/week9/) |
+| 10 | Posudzovanie rizík a návrh bezpečnostných systémov | FMEA, HAZOP, LOPA analýzy |[Week 10](/vyucba/Bezpečnostné_Systémy/Weeks/week10/) |
+| 11 | Validácia a verifikácia bezpečnostných systémov | Testovanie proti špecifikáciám, dokumentácia |[Week 11](/vyucba/Bezpečnostné_Systémy/Weeks/week11/) |
+| 12 | Kybernetická bezpečnosť a Safety | Prepojenie medzi bezpečnosťou a ochranou pred útokmi | [Week 12](/vyucba/Bezpečnostné_Systémy/Weeks/week12/) |
+| 13 | Prezentácie študentských projektov | Diskusia a hodnotenie návrhov | [Week 13](/vyucba/Bezpečnostné_Systémy/Weeks/week13/) |
 
-<table>
-  <tr>
-    <th>Týždeň</th>
-    <th>Náplň</th>
-    <th>Detail</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>1. Úvod do funkčnej bezpečnosti v priemysle</td>
-    <td>- Základné normy (IEC 61508, ISO 13849)</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>2. Bezpečnostné funkcie a Safety Life Cycle</td>
-    <td>- Proces návrhu a implementácie bezpečnostných funkcií</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>3. SIL – Safety Integrity Level</td>
-    <td>- Kategorizácia a výpočet úrovní spoľahlivosti</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>4. PL – Performance Level</td>
-    <td>- Hodnotenie podľa ISO 13849-1</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>5. Bezpečnostné senzory – typy a aplikácie</td>
-    <td>- Optické, indukčné, mechanické, RFID senzory</td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td>6. Bezpečnostné aktuátory a výstupné prvky</td>
-    <td>- Relé, ventily, pohony, stýkače so spätnou väzbou</td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>7. Safety PLC – architektúra a princíp činnosti</td>
-    <td>- Redundantné procesory, diagnostika, bezpečnostné I/O</td>
-  </tr>
-  <tr>
-    <td>8</td>
-    <td>8. Programovanie bezpečnostných funkcií</td>
-    <td>- Certifikované bloky, testovanie, validácia logiky</td>
-  </tr>
-  <tr>
-    <td>9</td>
-    <td>9. Diagnostika, testovanie a údržba bezpečnostných systémov</td>
-    <td>- Periodické testy, logovanie chýb, údržba podľa IEC 61511</td>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td>10. Posudzovanie rizík a návrh bezpečnostných systémov</td>
-    <td>- FMEA, HAZOP, LOPA analýzy</td>
-  </tr>
-  <tr>
-    <td>11</td>
-    <td>11. Validácia a verifikácia bezpečnostných systémov</td>
-    <td>- Testovanie proti špecifikáciám, dokumentácia</td>
-  </tr>
-  <tr>
-    <td>12</td>
-    <td>12. Kybernetická bezpečnosť a Safety</td>
-    <td>- Prepojenie medzi bezpečnosťou a ochranou pred útokmi</td>
-  </tr>
-  <tr>
-    <td>13</td>
-    <td>13. Prezentácie študentských projektov</td>
-    <td>- Diskusia a hodnotenie návrhov</td>
-  </tr>
-</table>
 
-> 🗒️ *Poznámka:* Doplň podľa harmonogramu semestra, napr. témy cvičení, projektov alebo skúšok.
+> 🗒️ *Poznámka:* Doplň podľa harmonogramu semestra – napr. témy cvičení, projektov alebo skúšok.
 
 ---
 
@@ -147,11 +68,12 @@ Zadania pre študentov:
 
 ### ⚙️ Simulator
 Interaktívne simulátory:  
-- 🔗 [Open in Wokwi Simulator](https://wokwi.com)  
-- 🔗 [Try Jupyter Online](https://jupyter.org/try-jupyter)  
-- 🔗 [CircuitJS Online](https://www.falstad.com/circuit/)
+- [Open in Wokwi Simulator](https://wokwi.com)  
+- [Try Jupyter Online](https://jupyter.org/try-jupyter)  
+- [CircuitJS Online](https://www.falstad.com/circuit/)
 
 ---
+
 ## 📚 Structure
 - [Notes](./notes/)
 - [Assignments](./assignments/)
@@ -159,24 +81,8 @@ Interaktívne simulátory:
 - [Instructions](./instructions/)
 
 ---
-*Posledná aktualizácia:* {{ site.time | date: "%d.%m.%Y" }}
 
+**Posledná aktualizácia:** {{ site.time | date: "%d.%m.%Y" }}
 
-<h3>Semester Plan</h3>
-<table border='1' style='border-collapse:collapse;width:100%;text-align:left;'>
-<thead><tr><th>Week</th><th>Link</th></tr></thead>
-<tbody>
-<tr><td>1</td><td><a href='/vyucba/Bezpečnostné_Systémy/Weeks/week1/'>Week 1</a></td></tr>
-<tr><td>2</td><td><a href='/vyucba/Bezpečnostné_Systémy/Weeks/week2/'>Week 2</a></td></tr>
-<tr><td>3</td><td><a href='/vyucba/Bezpečnostné_Systémy/Weeks/week3/'>Week 3</a></td></tr>
-<tr><td>4</td><td><a href='/vyucba/Bezpečnostné_Systémy/Weeks/week4/'>Week 4</a></td></tr>
-<tr><td>5</td><td><a href='/vyucba/Bezpečnostné_Systémy/Weeks/week5/'>Week 5</a></td></tr>
-<tr><td>6</td><td><a href='/vyucba/Bezpečnostné_Systémy/Weeks/week6/'>Week 6</a></td></tr>
-<tr><td>7</td><td><a href='/vyucba/Bezpečnostné_Systémy/Weeks/week7/'>Week 7</a></td></tr>
-<tr><td>8</td><td><a href='/vyucba/Bezpečnostné_Systémy/Weeks/week8/'>Week 8</a></td></tr>
-<tr><td>9</td><td><a href='/vyucba/Bezpečnostné_Systémy/Weeks/week9/'>Week 9</a></td></tr>
-<tr><td>10</td><td><a href='/vyucba/Bezpečnostné_Systémy/Weeks/week10/'>Week 10</a></td></tr>
-<tr><td>11</td><td><a href='/vyucba/Bezpečnostné_Systémy/Weeks/week11/'>Week 11</a></td></tr>
-<tr><td>12</td><td><a href='/vyucba/Bezpečnostné_Systémy/Weeks/week12/'>Week 12</a></td></tr>
-<tr><td>13</td><td><a href='/vyucba/Bezpečnostné_Systémy/Weeks/week13/'>Week 13</a></td></tr>
-</tbody></table>
+---
+
