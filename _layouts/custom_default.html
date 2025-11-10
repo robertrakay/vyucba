@@ -63,6 +63,7 @@
 </head>
 
 <body class="{% if page.show_sidebar == false %}no-sidebar{% endif %}">
+<body {% if page.show_sidebar == false %}class="no-sidebar"{% endif %}>
 
   {% if page.show_sidebar != false %}
     <div id="side-panel">
