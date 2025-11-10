@@ -53,10 +53,25 @@
       flex: 1;
       padding: 20px;
       overflow-y: auto;
+      position: relative;
     }
 
     .no-sidebar #main-content {
       margin-left: 0;
+    }
+
+    /* NOVÉ: Pomodoro timer container napravo od obsahu */
+    #pomodoro-container {
+      position: fixed;
+      top: 100px; /* vzdialenosť od hornej časti okna */
+      right: 20px; /* od pravého okraja */
+      width: 250px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      z-index: 1000;
     }
   </style>
 </head>
@@ -66,21 +81,22 @@
   {% if page.show_sidebar != false %}
     <!-- BEGIN SIDEBAR -->
     {% include sidebar.html %}
-    
-    <!-- BEGIN POMODORO TIMER INCLUDE -->
-    {% comment %} 
-      Include Pomodoro časovača, viditeľný vždy v sidebaru. 
-      Súbor: _includes/pomodoro.html 
-      Obsahuje spustenie/pozastavenie/reštart časovača. 
-    {% endcomment %}
-    {% include pomodoro.html %}
-    <!-- END POMODORO TIMER INCLUDE -->
-    
   {% endif %}
 
   <div id="main-content">
     {{ content }}
   </div>
+
+  <!-- BEGIN POMODORO TIMER -->
+  {% comment %}
+    Pomodoro časovač je umiestnený napravo od obsahu, nezávisle od sidebaru.
+    Súbor: _includes/pomodoro.html
+    Obsahuje ovládacie tlačidlá: Start / Pause / Reset a vizualizáciu odpočtu.
+  {% endcomment %}
+  <div id="pomodoro-container">
+    {% include pomodoro.html %}
+  </div>
+  <!-- END POMODORO TIMER -->
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
