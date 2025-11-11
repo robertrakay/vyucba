@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: custom_default
 title: Remark.js prezentácia
 show_sidebar: true
 ---
@@ -18,20 +18,19 @@ show_sidebar: true
       <script src='https://remarkjs.com/downloads/remark-latest.min.js'></script>
     </head>
     <body>
-      <textarea id='source' style='display:none;'>
-      </textarea>
+      <textarea id='source' style='display:none;'></textarea>
       <script>
         fetch('/sprava_o_ustave_2025.md')
-    .then(res => res.text())
-    .then(md => {
-      document.getElementById('source').value = md;
-      remark.create({ ratio:'16:9', highlightLanguage:'python', highlightStyle:'monokai' });
-    });
+          .then(res => res.text())
+          .then(md => {
+            document.getElementById('source').value = md;
+            remark.create({ ratio:'16:9', highlightLanguage:'python', highlightStyle:'monokai' });
+          });
       </script>
     </body>
     </html>
   " width="100%" height="100%" frameborder="0"></iframe>
 </div>
 
-# 👋 Include google prezentácia
+# 👋 Include Google prezentácia
 {% include_relative index2.md %}
