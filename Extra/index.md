@@ -19,10 +19,14 @@ show_sidebar: true
     </head>
     <body>
       <textarea id='source' style='display:none;'>
-       fetch('/sprava_o_ustave_2025.md')
       </textarea>
       <script>
-        remark.create({ ratio:'16:9', highlightLanguage:'python', highlightStyle:'monokai' });
+        fetch('/sprava_o_ustave_2025.md')
+    .then(res => res.text())
+    .then(md => {
+      document.getElementById('source').value = md;
+      remark.create({ ratio:'16:9', highlightLanguage:'python', highlightStyle:'monokai' });
+    });
       </script>
     </body>
     </html>
