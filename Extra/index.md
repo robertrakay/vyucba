@@ -36,16 +36,7 @@ Na prepínanie jednotlivých slide-ov použite klávesy ← a →
   " width="100%" height="100%" frameborder="0"></iframe>
 </div>
 
-<!-- 🧭 PowerPoint prezentácia z OneDrive -->
-<div style="width: 100%; height: 500px; border:1px solid #ccc; border-radius:10px; overflow:hidden;">
-  <iframe 
-    src="https://tukesk-my.sharepoint.com/personal/robert_rakay_tuke_sk/_layouts/15/Doc.aspx?sourcedoc={6633b7bf-b693-44cf-8d9b-5b5de6162548}&action=embedview&wdAr=1.7777777777777777" 
-    width="100%" 
-    height="100%" 
-    frameborder="0">
-    Toto je vložený dokument (prezentácie) programu <a target='_blank' href='https://office.com'>Microsoft Office</a>, ktorý používa aplikácia <a target='_blank' href='https://office.com/webapps'>Office</a>.
-  </iframe>
-</div>
+
 
 ---
 
