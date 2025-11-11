@@ -1,5 +1,5 @@
 ---
-layout: custom_default
+layout: main
 title: Moja úvodná stránka
 show_sidebar: true
 ---
