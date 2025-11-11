@@ -1,5 +1,7 @@
 #TU BUDE Doplnené
 
+{% capture tutorial %}{% include sprava_o_ustave_2025.md %}{% endcapture %
+
 
 <h3>Semester Plan</h3>
 <table border='1' style='border-collapse:collapse;width:100%;text-align:left;'>
