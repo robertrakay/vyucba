@@ -1,6 +1,6 @@
 ---
 title: Logické riadiace systémy
-layout: subject
+layout: custom_default
 has_children: true
 nav_order: 2
 show_sidebar: false
