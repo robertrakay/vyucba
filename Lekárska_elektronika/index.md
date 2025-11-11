@@ -1,6 +1,6 @@
 ---
 title: Lekárska elektronika
-layout: subject
+layout: custom_default
 has_children: true
 nav_order: 2
 show_sidebar: false
@@ -69,5 +69,6 @@ Brief description of Lekárska elektronika.
 - [Code Examples](./code_examples/)
 - [Instructions](./instructions/)
 ---
+
 
 *Posledná aktualizácia:* {{ site.time | date: "%d.%m.%Y" }}
