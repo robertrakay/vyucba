@@ -23,7 +23,7 @@ show_sidebar: true
     <body>
       <textarea id='source' style='display:none;'></textarea>
       <script>
-        fetch('/sprava_o_ustave_2025.md')
+        fetch('Extra/sprava_o_ustave_2025.md')
           .then(res => res.text())
           .then(md => {
             document.getElementById('source').value = md;
