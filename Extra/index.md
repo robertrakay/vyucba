@@ -5,14 +5,13 @@ show_sidebar: true
 ---
 
 # 👋 Vitaj na stránke
-Na prepínanie jednotlivých slide-ov použite klávesy ← a →
 
 ---
 
 ## 🎥 Interaktívna prezentácia (Markdown + PowerPoint)
 
-<!-- 🧩 Remark Markdown prezentácia -->
-<div style="width: 100%; height: 500px; border:1px solid #ccc; border-radius:10px; overflow:hidden; margin-bottom: 20px;">
+<!-- Markdown prezentácia -->
+<div style="width:100%; height:500px; border:1px solid #ccc; margin-bottom:20px;">
   <iframe srcdoc="
     <!DOCTYPE html>
     <html>
@@ -36,9 +35,7 @@ Na prepínanie jednotlivých slide-ov použite klávesy ← a →
   " width="100%" height="100%" frameborder="0"></iframe>
 </div>
 
-
-
----
-
-## 📘 Ďalší obsah
-Tu môžeš mať napríklad plán semestra, tabuľku alebo odkazy.
+<!-- Google Slides prezentácia -->
+<div style="width:100%; height:500px; border:1px solid #ccc;">
+  <iframe src="https://docs.google.com/presentation/d/13y-hdo8QISU0eZM54qNA8ecbagOQfATZ/edit?usp=sharing&ouid=114071380026780541902&rtpof=true&sd=true" width="100%" height="100%" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
