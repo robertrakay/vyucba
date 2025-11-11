@@ -19,7 +19,7 @@ show_sidebar: true
     </head>
     <body>
       <textarea id='source' style='display:none;'>
-{% include_relative sprava_o_ustave_2025.md %}
+       fetch('/sprava_o_ustave_2025.md')
       </textarea>
       <script>
         remark.create({ ratio:'16:9', highlightLanguage:'python', highlightStyle:'monokai' });
