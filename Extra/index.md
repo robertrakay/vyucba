@@ -26,27 +26,6 @@ Tu bude bežný text alebo obsah stránky.
     <textarea id='source' style='display:none;'>
 
 
-class: center, middle, inverse
-# 👨‍🏫 Predmet: Automatizácia
-Úvodná prezentácia
-
----
-
-# 🏭 Priemysel 4.0
-Integrácia IoT, AI a robotiky
-
----
-
-# 🤖 Príklady
-- Riadiace systémy
-- Vizualizácia
-- OEE monitoring
-
----
-
-# ✅ Ďakujem!
-Stlač **šípku doprava ⬅️➡️** pre prechod medzi snímkami.
-
 
 {% include_relative sprava_o_ustave_2025.md %}
 
