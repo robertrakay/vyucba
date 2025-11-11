@@ -1,33 +1,70 @@
 ---
 layout: custom_default
-title: Extra
+title: Moja úvodná stránka
 show_sidebar: true
 ---
 
-# TU BUDE Doplnené
-
-{% capture tutorial %}
-{% include_relative sprava_o_ustave_2025.md %}
-{% endcapture %}
-
-{{ tutorial | markdownify }}
+# 👋 Vitaj na stránke
+Tu bude bežný text alebo obsah stránky.
 
 ---
 
-### 📅 Semester Plan
+## 🎥 Interaktívna prezentácia
 
-| Week | Link |
-|------|------|
-| 1 | [Week 1](/vyucba/Extra/Weeks/week1/) |
-| 2 | [Week 2](/vyucba/Extra/Weeks/week2/) |
-| 3 | [Week 3](/vyucba/Extra/Weeks/week3/) |
-| 4 | [Week 4](/vyucba/Extra/Weeks/week4/) |
-| 5 | [Week 5](/vyucba/Extra/Weeks/week5/) |
-| 6 | [Week 6](/vyucba/Extra/Weeks/week6/) |
-| 7 | [Week 7](/vyucba/Extra/Weeks/week7/) |
-| 8 | [Week 8](/vyucba/Extra/Weeks/week8/) |
-| 9 | [Week 9](/vyucba/Extra/Weeks/week9/) |
-| 10 | [Week 10](/vyucba/Extra/Weeks/week10/) |
-| 11 | [Week 11](/vyucba/Extra/Weeks/week11/) |
-| 12 | [Week 12](/vyucba/Extra/Weeks/week12/) |
-| 13 | [Week 13](/vyucba/Extra/Weeks/week13/) |
+<div id="remark-container" style="height:500px; border:1px solid #ccc; border-radius:10px; overflow:hidden;">
+  <iframe id="remark-frame" srcdoc="
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset='utf-8'>
+    <style>
+      html, body { margin: 0; height: 100%; }
+    </style>
+    <script src='https://remarkjs.com/downloads/remark-latest.min.js'></script>
+  </head>
+  <body>
+    <textarea id='source' style='display:none;'>
+
+
+class: center, middle, inverse
+# 👨‍🏫 Predmet: Automatizácia
+Úvodná prezentácia
+
+---
+
+# 🏭 Priemysel 4.0
+Integrácia IoT, AI a robotiky
+
+---
+
+# 🤖 Príklady
+- Riadiace systémy
+- Vizualizácia
+- OEE monitoring
+
+---
+
+# ✅ Ďakujem!
+Stlač **šípku doprava ⬅️➡️** pre prechod medzi snímkami.
+
+
+{% include_relative sprava_o_ustave_2025.md %}
+
+
+    </textarea>
+    <script>
+      var slideshow = remark.create({
+        ratio: '16:9',
+        highlightLanguage: 'python',
+        highlightStyle: 'monokai'
+      });
+    </script>
+  </body>
+  </html>
+  " width="100%" height="100%" frameborder="0"></iframe>
+</div>
+
+---
+
+## Ďalší obsah
+Tu môžeš mať napríklad plán semestra, tabuľku alebo odkazy.
