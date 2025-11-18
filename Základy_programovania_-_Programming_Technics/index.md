@@ -18,7 +18,9 @@ Brief description of Základy programovania - Programming Technics.
 - [Instructions](./instructions/)
 
 Využíva sa online prostredie **Jupyter Notebook**.  
-👉 Spusti simulátor tu: [https://jupyter.org/try-jupyter](https://jupyter.org/try-jupyter)
+👉 Spusti simulátor tu: [https://jupyter.org/try-jupyter](https://jupyter.org/try-jupyter)  
+📘 [Jupyter tutorial](https://www.dataquest.io/blog/jupyter-notebook-tutorial/) - A beginner's step-by-step guide to using Jupyter Notebooks for interactive data science projects.  
+📝 [Google Colab tutorial](https://medium.com/google-colab) - Tutorials and tips for using Google Colab, Google's hosted Jupyter Notebook environment.
 
 ---
 
