@@ -42,7 +42,7 @@ The course provides fundamental knowledge of electrical quantities, circuits, an
 ---
 
 ## 🧩 Doplnky / Addons
-
+https://control.com/textbook/dc-electricity/electrical-current/?user_mcid=27e8c24f93
 ### 💻 Code Examples
 Odkazy alebo ukážky zdrojových kódov:  
 - [Ukážka 1 – Blikanie LED (Arduino)](Code_examples/example1.md)  
@@ -85,4 +85,5 @@ Interaktívne simulátory:
 
 
 *Last updated:* {{ site.time | date: "%d.%m.%Y" }}
+
 
