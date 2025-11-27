@@ -37,6 +37,7 @@ Brief description of Logické riadiace systémy.
 ---
 
 ## 🧩 Doplnky / Addons
+- [Oficiálna dokumentácia S71200](https://docs.tia.siemens.cloud/r/simatic_s7_1200_manual_collection_enus_20/plc-concepts/execution-of-the-user-program/organization-blocks-obs/)
 
 ### 💻 Code Examples
 - [Ukážka 1 – Blikanie LED (Arduino)](Code_examples/example1.md)  
@@ -65,3 +66,4 @@ Brief description of Logické riadiace systémy.
 - [Instructions](./instructions/)
 
 *Posledná aktualizácia:* {{ site.time | date: "%d.%m.%Y" }}
+
