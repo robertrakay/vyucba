@@ -44,6 +44,9 @@ Brief description of Logické riadiace systémy.
 - [Ukážka 2 – Čítanie senzora](Code_examples/example2.md)
 
 ### 🌐 Interesting Links
+- [OPC UA](https://control.com/technical-articles/using-opc-ua-industrial-connectivity-with-kepserverex/)
+- [SCADA](https://control.com/technical-articles/an-introduction-to-supervisory-control-and-data-acquisition-scada/)
+- [SIL Safety Integrity Level](https://control.com/industry-white-papers/an-introduction-to-safety-integrity-level-sil/pdfdownload/)
 - [Oficiálna dokumentácia Pythonu](https://docs.python.org/)  
 - [Simulátor Wokwi](https://wokwi.com)  
 - [Falstad obvody](https://falstad.com/circuit/)
@@ -66,5 +69,6 @@ Brief description of Logické riadiace systémy.
 - [Instructions](./instructions/)
 
 *Posledná aktualizácia:* {{ site.time | date: "%d.%m.%Y" }}
+
 
 
