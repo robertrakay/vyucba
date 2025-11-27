@@ -26,10 +26,10 @@ Brief description of Logické riadiace systémy.
 | 6 |  | HMI | [Week 6](/vyucba/Logické_riadiace_systémy/Weeks/week6/) |
 | 7 |  | Funkcie, FB, DB | [Week 7](/vyucba/Logické_riadiace_systémy/Weeks/week7/) |
 | 8 |  | Semestrálne zadanie | [Week 8](/vyucba/Logické_riadiace_systémy/Weeks/week8/) |
-| 9 | Komunikácia medzi viacerými PLC |  | [Week 9](/vyucba/Logické_riadiace_systémy/Weeks/week9/) |
-| 10 | Analógové signály |  | [Week 10](/vyucba/Logické_riadiace_systémy/Weeks/week10/) |
+| 9 | Komunikácia medzi viacerými PLC | [PUT/GET](https://support.industry.siemens.com/cs/document/82212115/how-do-you-configure-and-program-an-s7-connection-and-the-%E2%80%9Cput%E2%80%9D-and-%E2%80%9Cget%E2%80%9D-instructions-for-data-transfer-between-two-s7-cpus-?dti=0&lc=en-SK) | [Week 9](/vyucba/Logické_riadiace_systémy/Weeks/week9/) |
+| 10 | Analógové signály | [NormX,ScaleX](https://support.industry.siemens.com/cs/document/39334504/for-an-s7-1200-s7-1500-controller-in-step-7-(tia-portal)-how-do-you-scale-integer-values-in-real-numbers-and-vice-versa-for-analog-inputs-and-outputs-?dti=0&lc=en-TR) | [Week 10](/vyucba/Logické_riadiace_systémy/Weeks/week10/) |
 | 11 | IO-Link komunikácia |  | [Week 11](/vyucba/Logické_riadiace_systémy/Weeks/week11/) |
-| 12 | Node-Red a PLC |  | [Week 12](/vyucba/Logické_riadiace_systémy/Weeks/week12/) |
+| 12 | Node-Red a PLC |[MQTTL](https://support.industry.siemens.com/cs/document/109748872/use-the-simatic-controller-as-an-mqtt-client?dti=0&lc=en-SK/) [LStream](https://support.industry.siemens.com/cs/document/109781165/library-for-data-streams-(lstream)?dti=0&lc=en-SK)| [Week 12](/vyucba/Logické_riadiace_systémy/Weeks/week12/) |
 | 13 | Prezentácie projektov študentov |  | [Week 13](/vyucba/Logické_riadiace_systémy/Weeks/week13/) |
 
 > 🗒️ *Poznámka:* Doplň podľa harmonogramu semestra, napr. témy cvičení, projektov alebo skúšok.
@@ -37,7 +37,8 @@ Brief description of Logické riadiace systémy.
 ---
 
 ## 🧩 Doplnky / Addons
-- [Oficiálna dokumentácia S71200](https://docs.tia.siemens.cloud/r/simatic_s7_1200_manual_collection_enus_20/plc-concepts/execution-of-the-user-program/organization-blocks-obs/)
+- [Oficiálna dokumentácia S71200](https://docs.tia.siemens.cloud/r/simatic_s7_1200_manual_collection_enus_20/introduction)
+- 
 
 ### 💻 Code Examples
 - [Ukážka 1 – Blikanie LED (Arduino)](Code_examples/example1.md)  
@@ -69,6 +70,7 @@ Brief description of Logické riadiace systémy.
 - [Instructions](./instructions/)
 
 *Posledná aktualizácia:* {{ site.time | date: "%d.%m.%Y" }}
+
 
 
 
