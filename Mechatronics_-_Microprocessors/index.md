@@ -40,3 +40,6 @@ Brief description of Mechatronics - Microprocessors.
 ---
 
 *Posledná aktualizácia:* {{ site.time | date: "%d.%m.%Y" }}
+
+## Intresting links
+- [TinkerIoT](https://tinkeriot.com/)
