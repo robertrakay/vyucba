@@ -38,8 +38,8 @@ Brief description of Logické riadiace systémy.
 
 ## 🧩 Doplnky / Addons
 - [Oficiálna dokumentácia S71200](https://docs.tia.siemens.cloud/r/simatic_s7_1200_manual_collection_enus_20/introduction)
-- 
-
+- [Komunikácia](https://support.industry.siemens.com/cs/document/109780503/libraries-for-communication-for-simatic-controllers?dti=0&lc=en-SK)
+- [Analogové signály](https://support.industry.siemens.com/cs/mdm/67989094?c=61580713355&dl=da&lc=en-SK)
 ### 💻 Code Examples
 - [Ukážka 1 – Blikanie LED (Arduino)](Code_examples/example1.md)  
 - [Ukážka 2 – Čítanie senzora](Code_examples/example2.md)
@@ -70,6 +70,7 @@ Brief description of Logické riadiace systémy.
 - [Instructions](./instructions/)
 
 *Posledná aktualizácia:* {{ site.time | date: "%d.%m.%Y" }}
+
 
 
 
