@@ -18,7 +18,7 @@ Brief description of Logické riadiace systémy.
 
 | Week | Topic | Detail | Link |
 |------|-------|--------|------|
-| 1 | Úvod do Logických riadiacich systémov | Boolovská logika | [Week 1](vyucba/Logické_riadiace_systémy/Weeks/week1/) |
+| 1 | Úvod do Logických riadiacich systémov | Boolovská logika | [Week 1](vyucba/Logické_riadiace_systémy/Weeks/week1/index.md) |
 | 2 | TBD | Kombinačné obvody  | [Week 2](/vyucba/Logické_riadiace_systémy/Weeks/week2/) |
 | 3 | TBD | Logické funkcie | [Week 3](/vyucba/Logické_riadiace_systémy/Weeks/week3/) |
 | 4 | TBD | Časovače a Počítadlá | [Week 4](/vyucba/Logické_riadiace_systémy/Weeks/week4/) |
@@ -70,6 +70,7 @@ Brief description of Logické riadiace systémy.
 - [Instructions](./instructions/)
 
 *Posledná aktualizácia:* {{ site.time | date: "%d.%m.%Y" }}
+
 
 
 
