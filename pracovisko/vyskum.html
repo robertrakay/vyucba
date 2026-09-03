@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pracovisko - Akademický Web</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        /* Hlavný obal stránky */
+        .site-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #ffffff;
+            min-height: 100vh;
+            box-shadow: 0 0 15px rgba(0,0,0,0.05);
+        }
+        /* Hlavička a navigácia */
+        header {
+            background: #ffffff;
+            border-bottom: 2px solid #e9ecef;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo-area h1 {
+            margin: 0;
+            font-size: 22px;
+            color: #003366;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .logo-area p {
+            margin: 2px 0 0 0;
+            font-size: 13px;
+            color: #6c757d;
+        }
+        nav.main-nav {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        nav.main-nav a {
+            text-decoration: none;
+            color: #495057;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+        nav.main-nav a:hover, nav.main-nav a.active {
+            background-color: #003366;
+            color: #ffffff;
+        }
+        /* Obsahová časť */
+        .content-body {
+            padding: 40px;
+        }
+        .hero-box {
+            background: #f1f3f5;
+            border-left: 5px solid #003366;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 0 4px 4px 0;
+        }
+        .hero-box h2 {
+            margin-top: 0;
+            color: #003366;
+        }
+        .grid-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .card {
+            border: 1px solid #dee2e6;
+            padding: 20px;
+            border-radius: 6px;
+            background: #fff;
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #003366;
+            font-size: 18px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        /* Pätička */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f1f3f5;
+            color: #6c757d;
+            font-size: 13px;
+            border-top: 1px solid #dee2e6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="site-container">
+        <!-- Hlavička s menu -->
+        <header>
+            <div class="logo-area">
+                <h1>Pracovisko</h1>
+                <p>Odborné laboratórium a výskumná skupina</p>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html" >Domov</a>
+                <a href="studium.html">Študium</a>
+                <a href="pracovisko.html">Pracovisko</a>
+                <a href="vyskum.html" class="active">Výskum</a>
+                <a href="uchadzaci.html">Pre uchádzačov</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
+        </header>
+
+        <!-- Hlavný obsah úvodu -->
+        <div class="content-body">
+            <div class="hero-box">
+                <h2>Vitajte na stránke nášho pracoviska</h2>
+                <p>Zameriavame sa na moderný výskum, vzdelávanie a praktickú prípravu študentov v oblasti pokročilých technológií, automatizácie a mechatroniky.</p>
+            </div>
+
+            <h2>Aktuality / Novinky</h2>
+            <div class="grid-section">
+                <div class="card">
+                    <h3>Úspech na konferencii</h3>
+                    <p>Naši študenti úspešne prezentovali výsledky výskumu v oblasti robotických systémov na medzinárodnej pôde.</p>
+                </div>
+                <div class="card">
+                    <h3>Nové vybavenie laboratória</h3>
+                    <p>Do prevádzky sme uviedli novú experimentálnu zostavu pre riadenie mechatronických procesov.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pätička -->
+        <footer>
+            <p>&copy; 2026 Pracovisko | Vytvorené cez GitHub Pages</p>
+        </footer>
+    </div>
+
+</body>
+</html>
