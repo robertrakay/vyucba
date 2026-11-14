@@ -12,6 +12,9 @@ body {
   display: block;          /* ❗ odstránené flex, inak sa obsah skracuje */
   overflow-x: hidden;      /* nech nepreteká vodorovne */
   overflow-y: auto;        /* umožní vertikálne scrollovanie */
+  /* Predvolený posun pre hlavný obsah. Bude ho dynamicky meniť JS. */
+  padding-left: 250px;     
+  transition: padding-left 0.25s ease;
 }
 
 /* === SIDEBAR STYLING === */
@@ -19,32 +22,42 @@ body {
   background: #f9f9f9;
   border-right: 1px solid #ddd;
   padding: 15px;
-  width: 220px;
+  /* Šírka je definovaná primárne v JS/HTML, tu len ako poistka */
+  width: 250px; 
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   overflow-y: auto;
   font-family: "Segoe UI", sans-serif;
-  transition: transform 0.3s ease;
+  transition: transform 0.25s ease, width 0.15s ease;
   z-index: 1000;
+  box-sizing: border-box;
 }
 
-#side-panel.hidden {
+/* Skrytie sidebaru */
+#side-panel.closed {
   transform: translateX(-100%);
+}
+
+/* Ak je sidebar skrytý, obsah sa roztiahne na celú šírku */
+body.sidebar-closed {
+  padding-left: 0 !important;
 }
 
 /* ===== Obsah ===== */
 main, #main-content {
   padding: 20px;
-  margin-left: 240px;  /* posun kvôli sidebaru */
+  /* margin-left sme odstránili, používame padding-left na body */
   box-sizing: border-box;
   overflow: visible;
+  max-width: 1200px; /* Voliteľné: obmedzenie šírky pre lepšiu čitateľnosť */
+  margin: 0 auto;
 }
 
-/* Ak je sidebar vypnutý */
-body.no-sidebar #main-content {
-  margin-left: 0;
+/* Ak je sidebar úplne vypnutý (show_sidebar: false vo frontmatteri) */
+body.no-sidebar {
+  padding-left: 0;
 }
 
 /* ===== Markdown štýly ===== */

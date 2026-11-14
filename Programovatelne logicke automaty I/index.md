@@ -3,7 +3,7 @@ title: Programovateľné logické automaty I
 layout: custom_default
 has_children: true
 nav_order: 2
-show_sidebar: false
+show_sidebar: true
 ---
 
 # Programovateľné logické automaty I
