@@ -36,8 +36,10 @@ navbar:
         url: /Digitalizácia_Priemyslu/
       - title: Lekárska elektronika
         url: /Lekárska_elektronika/
-      - title: Logické Riadiace Systémy
-        url: /Logické_Riadiace_Systémy/
+      - title: Programovateľné Logické Automaty I
+        url: /Programovatelne logicke automaty I/
+      - title: Programovateľné Logické Automaty II
+        url: /Programovatelne logicke automaty II/
       - title: Projektová Dokumentácia
         url: /Projektová_Dokumentácia/
       - title: Prostriedky Priemyselnej Automatizácie
