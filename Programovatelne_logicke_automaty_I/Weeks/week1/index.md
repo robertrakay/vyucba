@@ -1,7 +1,7 @@
 ---
 layout: custom_default
 title: Week 1
-permalink: /Logické_riadiace_systémy/Weeks/week1/
+permalink: /Programovatelne_logicke_automaty_I/Weeks/week1/
 show_sidebar: false
 ---
 # Week 1
