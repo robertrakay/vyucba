@@ -1,11 +1,5 @@
 {% if page.show_sidebar != false %}
 <div id="sidebar-container">
-  <!-- ... celý obsah sidebaru ... -->
-</div>
-{% endif %}
-
-
-<div id="sidebar-container">
 
   <!-- 🔘 Tlačidlo na zbalenie -->
   <button id="sidebar-toggle" title="Toggle sidebar">≡</button>
@@ -19,7 +13,8 @@
       <li><a href="{{ '/Cybernetics_and_Informatics/' | relative_url }}">Cybernetics & Informatics</a></li>
       <li><a href="{{ '/Electrotechnics_and_electrical_engineering/' | relative_url }}">Electrotechnics & Electrical Engineering</a></li>
       <li><a href="{{ '/Lekárska_elektronika/' | relative_url }}">Lekárska elektronika</a></li>
-      <li><a href="{{ '/Logické_riadiace_systémy/' | relative_url }}">Logické riadiace systémy</a></li>
+      <li><a href="{{ '/Programovatelne_logicke_automaty_I/' | relative_url }}">Programovateľné logické automaty I</a></li>
+      <li><a href="{{ '/Programovatelne_logicke_automaty_II/' | relative_url }}">Programovateľné logické automaty II</a></li>
       <li><a href="{{ '/Mechatronics_-_Microprocessors/' | relative_url }}">Mechatronics - Microprocessors</a></li>
       <li><a href="{{ '/Základy_programovania_-_Programming_Technics/' | relative_url }}">Základy programovania</a></li>
       <li><a href="{{ '/Digitalizácia_Priemyslu/' | relative_url }}">Digitalizácia Priemyslu</a></li>
@@ -104,6 +99,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    bottom: 0;
     width: 5px;
     cursor: ew-resize;
     background: transparent;
@@ -131,28 +127,38 @@
     const sidebar = document.getElementById("side-panel");
     const toggle = document.getElementById("sidebar-toggle");
     const resizer = document.getElementById("resizer");
+    
+    // Ošetrenie chýb: Ak element neexistuje, skript skončí
+    if (!sidebar || !toggle || !resizer) return;
+    
     let isResizing = false;
 
     // 🔘 Toggle otváranie / zatváranie sidebaru
     toggle.addEventListener("click", function () {
       sidebar.classList.toggle("closed");
+      sidebar.classList.toggle("open"); // Pridaný toggle pre mobilné zariadenia
     });
 
     // ✋ Resizing myšou
     resizer.addEventListener("mousedown", function (e) {
+      e.preventDefault(); // Zabráni nežiaducemu správaniu (napr. označovaniu textu)
       isResizing = true;
       document.body.style.cursor = "ew-resize";
     });
 
     document.addEventListener("mousemove", function (e) {
       if (!isResizing) return;
+      // Vypočíta novú šírku a obmedzí ju medzi 150px a 400px
       const newWidth = Math.min(Math.max(e.clientX, 150), 400);
       sidebar.style.width = newWidth + "px";
     });
 
     document.addEventListener("mouseup", function () {
-      isResizing = false;
-      document.body.style.cursor = "default";
+      if (isResizing) {
+        isResizing = false;
+        document.body.style.cursor = "default";
+      }
     });
   });
 </script>
+{% endif %}
